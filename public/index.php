@@ -1,4 +1,9 @@
 <?php
+
+$env = getenv('APPLICATION_ENV') ?: 'production';
+ini_set("display_errors", $env==='production'?0:1);
+
+
 /**
  * This makes our life easier when dealing with paths. Everything is relative
  * to the application root now.

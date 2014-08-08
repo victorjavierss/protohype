@@ -9,8 +9,13 @@
 
 namespace Application;
 
+use Application\Model\Application;
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
+
+use Application\Model\ApplicationTable;
+use Zend\Db\ResultSet\ResultSet;
+use Zend\Db\TableGateway\TableGateway;
 
 class Module
 {
@@ -24,6 +29,25 @@ class Module
     public function getConfig()
     {
         return include __DIR__ . '/config/module.config.php';
+    }
+
+    public function getServiceConfig()
+    {
+        return array(
+            'factories' => array(
+                'Application\Model\ApplicationTable' =>  function($sm) {
+                        $tableGateway = $sm->get('AlbumTableGateway');
+                        $table = new ApplicationTable($tableGateway);
+                        return $table;
+                    },
+                'AlbumTableGateway' => function ($sm) {
+                        $dbAdapter = $sm->get('Zend\Db\Adapter\Adapter');
+                        $resultSetPrototype = new ResultSet();
+                        $resultSetPrototype->setArrayObjectPrototype ( new Application() );
+                        return new TableGateway('album', $dbAdapter, null, $resultSetPrototype);
+                    },
+            ),
+        );
     }
 
     public function getAutoloaderConfig()
