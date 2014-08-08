@@ -1,5 +1,17 @@
 protohype
 =========
+Requirements
+------------
+ - [Requirements](#requirements)
+ - [Installation](#installation)
+    - [Local DNS Setup](#local-dns-setup)
+    - [Web Server Setup](#web-server-setup)
+
+Requirements
+------------
+ - PHP 5.3.x
+ - MySQL PDO
+ - Composer
 
 Installation
 ------------
