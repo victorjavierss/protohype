@@ -1,5 +1,6 @@
-protohype
+Protohype!
 =========
+
 Requirements
 ------------
  - [Requirements](#requirements)
