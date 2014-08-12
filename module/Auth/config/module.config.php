@@ -2,32 +2,30 @@
 return array(
     'controllers' => array(
         'invokables' => array(
-            'Demo\Controller\Demo' => 'Demo\Controller\DemoController',
+            'Auth\Controller\Auth' => 'Auth\Controller\AuthController',
         ),
     ),
-
-    // The following section is new and should be added to your file
     'router' => array(
         'routes' => array(
-            'demo' => array(
+            'auth' => array(
                 'type'    => 'segment',
                 'options' => array(
-                    'route'    => '/app[/][/:app]',
+                    'route'    => '/auth[/][:action][/:id]',
                     'constraints' => array(
-                        'app' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                        'id'     => '[0-9]+',
                     ),
                     'defaults' => array(
-                        'controller' => 'Demo\Controller\Demo',
+                        'controller' => 'Auth\Controller\Auth',
                         'action'     => 'index',
                     ),
                 ),
             ),
         ),
     ),
-
     'view_manager' => array(
         'template_path_stack' => array(
-            'album' => __DIR__ . '/../view',
+            'auth' => __DIR__ . '/../view',
         ),
     ),
 );

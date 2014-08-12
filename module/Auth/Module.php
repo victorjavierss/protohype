@@ -1,5 +1,5 @@
 <?php
-namespace Demo;
+namespace Auth;
 
 class Module
 {
