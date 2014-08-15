@@ -10,14 +10,19 @@
 namespace Application\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
+use Zend\Authentication\AuthenticationService;
 use Zend\View\Model\ViewModel;
+
 
 class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-        $sm = $this->getServiceLocator();
-        $sm->get('Application\Model\ApplicationTable');
+
+        $auth = new AuthenticationService();
+        if ( !$auth->hasIdentity() ) {
+            return $this->redirect()->toRoute('auth');
+        }
 
         return new ViewModel();
     }
