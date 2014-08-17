@@ -37,6 +37,7 @@
                     <a class="navbar-brand" href="<?php echo $this->url('home') ?>"><img src="<?php echo $this->basePath('img/zf2-logo.png') ?>" alt="Zend Framework 2"/>&nbsp;<?php echo $this->translate('Skeleton Application') ?></a>
                 </div>
 
+                <?php if( $this->hasIdentity ) : ?>
                 <ul class="nav navbar-top-links navbar-right">
                     <li class="green dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -122,8 +123,8 @@
                     <!-- /.dropdown -->
                     <li class="light-blue dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <?php echo $this->gravatar('victorjavierss@gmail.com', array('class'=>"nav-user-photo"),  array('class'=>"nav-user-photo"))?>
-                            <span class="user-info"><small>Welcome</small> Victor Sanchez </span> <i class="fa fa-caret-down"></i>
+                            <?php echo $this->gravatar($this->identity->email, array('class'=>"nav-user-photo"),  array('class'=>"nav-user-photo"))?>
+                            <span class="user-info"><?php echo $this->layout()->identity->name; ?></span> <i class="fa fa-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-user">
                             <li><a href="#"><i class="fa fa-user fa-fw"></i> Profile</a>
@@ -138,13 +139,14 @@
                     </li>
                     <!-- /.dropdown -->
                 </ul>
+                <?php endif; ?>
             </div>
         </nav>
         <div class="container">
             <?php echo $this->content; ?>
             <hr>
             <footer>
-                <p>Protohype</p>
+                <p>Protohype</p> --
             </footer>
         </div> <!-- /container -->
         <?php echo $this->inlineScript() ?>

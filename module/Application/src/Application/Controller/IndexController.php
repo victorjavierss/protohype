@@ -9,20 +9,15 @@
 
 namespace Application\Controller;
 
-use Zend\Mvc\Controller\AbstractActionController;
-use Zend\Authentication\AuthenticationService;
+
+use Protohype\ProtohypeActionController;
 use Zend\View\Model\ViewModel;
 
 
-class IndexController extends AbstractActionController
+class IndexController extends ProtohypeActionController
 {
     public function indexAction()
     {
-
-        $auth = new AuthenticationService();
-        if ( !$auth->hasIdentity() ) {
-            return $this->redirect()->toRoute('auth');
-        }
 
         return new ViewModel();
     }

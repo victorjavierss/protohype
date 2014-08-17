@@ -2,15 +2,13 @@
 /**
  * Created by PhpStorm.
  * User: vjavier
- * Date: 8/14/14
- * Time: 9:10 PM
+ * Date: 8/16/14
+ * Time: 11:45 AM
  */
 
 namespace Protohype\Widget;
 
 
-abstract class Base {
-
-
+class Html extends Base{
 
 } 
