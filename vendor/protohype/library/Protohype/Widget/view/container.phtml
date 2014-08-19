@@ -1,0 +1,23 @@
+<?php
+
+use Protohype\Widget\Attribs;
+
+$attribs = $this->attribs;
+
+//var_dump($attribs );
+
+
+?>
+
+
+<?php if( $attribs->has_wrapper ) : ?>
+<div class="container">
+<?php endif?>
+
+<<?php echo $this->tag;?> class='col-md-<?php echo $attribs->columns?>' >
+<?php echo $this->content;?>
+</<?php echo $this->tag;?>>
+
+<?php if( $attribs->has_wrapper ) : ?>
+</div>
+<?php endif?>

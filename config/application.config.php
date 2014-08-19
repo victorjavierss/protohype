@@ -8,7 +8,9 @@
 return array(
     'modules' => array(
         'Application',
-        'Auth'
+        'Auth',
+        'Demo',
+        'Editor',
     ),
     'module_listener_options' => array(
         'module_paths' => array(

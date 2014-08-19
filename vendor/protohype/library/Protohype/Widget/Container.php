@@ -12,4 +12,14 @@ use Protohype\Widget\Base as WidgetBase;
 
 class Container extends WidgetBase{
 
-} 
+    protected $_template = 'container';
+
+    public function __construct(){
+        parent::__construct();
+        $this->_attribs[ 'has_wrapper' ] = true;
+    }
+
+    public function setHasWrapper( $has ){
+        $this->_attribs[ 'has_wrapper' ] = $has;
+    }
+}
