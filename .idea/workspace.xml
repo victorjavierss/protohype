@@ -2,22 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57619e1c-e43a-4d5d-b3ec-f8fc30813a76" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Attribs.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Demo/src/Demo/Controller/DemoController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Editor/src/Editor/Controller/EditorController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Demo/Module.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Editor/Module.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Demo/view/layout/clean.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Editor/view/layout/clean.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/container.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Demo/view/demo/demo/index.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Editor/view/editor/editor/index.phtml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Demo/config/module.config.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/module/Editor/config/module.config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Social/Buttons.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Form/Contact.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Social/Feed/Facebook.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Flash.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Image.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/MainContainer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Navigation.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Form/Search.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Form/Subscribe.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Social/Feed/Twitter.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Video.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/social/buttons.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/image.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/main.phtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/social/feed/twitter.phtml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/module/Editor/view/layout/clean.phtml" afterPath="$PROJECT_DIR$/module/Editor/view/layout/editor.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Attribs.php" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Attribs.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Base.php" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Base.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Container.php" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Container.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.config.php" afterPath="$PROJECT_DIR$/config/application.config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" afterPath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Demo/src/Demo/Controller/DemoController.php" afterPath="$PROJECT_DIR$/module/Demo/src/Demo/Controller/DemoController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Editor/src/Editor/Controller/EditorController.php" afterPath="$PROJECT_DIR$/module/Editor/src/Editor/Controller/EditorController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Demo/view/layout/clean.phtml" afterPath="$PROJECT_DIR$/module/Demo/view/layout/clean.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/container.phtml" afterPath="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/container.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Editor/view/editor/editor/index.phtml" afterPath="$PROJECT_DIR$/module/Editor/view/editor/editor/index.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Editor/config/module.config.php" afterPath="$PROJECT_DIR$/module/Editor/config/module.config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="protohype.iws" />
@@ -42,19 +52,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DemoController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Demo/src/Demo/Controller/DemoController.php">
+      <file leaf-file-name="Attribs.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Attribs.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="19" selection-start="529" selection-end="529" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="465">
+            <state line="10" column="32" selection-start="225" selection-end="225" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="825">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Container.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Container.php">
+      <file leaf-file-name="Buttons.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Social/Buttons.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="34" selection-start="395" selection-end="395" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="375">
+            <state line="34" column="40" selection-start="785" selection-end="800" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="705">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buttons.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/social/buttons.phtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="10" selection-start="1476" selection-end="1476" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="495">
+              <folding>
+                <marker date="1408568640000" expanded="true" signature="1104:1282" placeholder="..." />
+                <marker date="1408568640000" expanded="true" signature="1104:1426" placeholder="..." />
+                <marker date="1408568640000" expanded="true" signature="1125:1282" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Video.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Video.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="35" selection-start="229" selection-end="229" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -63,7 +95,7 @@
       <file leaf-file-name="Base.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="0" selection-start="1772" selection-end="1772" vertical-scroll-proportion="-14.125" vertical-offset="741" max-vertical-offset="1485">
+            <state line="16" column="0" selection-start="316" selection-end="316" vertical-scroll-proportion="7.5" vertical-offset="420" max-vertical-offset="1350">
               <folding>
                 <element signature="e#35#65#0" expanded="true" />
               </folding>
@@ -71,20 +103,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Attribs.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Attribs.php">
+      <file leaf-file-name="DemoController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/Demo/src/Demo/Controller/DemoController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="68" selection-start="377" selection-end="377" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="450">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="container.phtml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/container.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="2" selection-start="68" selection-end="68" vertical-scroll-proportion="0.13657056" vertical-offset="0" max-vertical-offset="659">
-              <folding />
+            <state line="32" column="51" selection-start="1029" selection-end="1047" vertical-scroll-proportion="0.21225382" vertical-offset="211" max-vertical-offset="1185">
+              <folding>
+                <element signature="e#119#148#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,13 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/autoload/local.php.dist" />
-        <option value="$PROJECT_DIR$/config/autoload/local.php" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/module/Application/src/Application/Model/Application.php" />
-        <option value="$PROJECT_DIR$/module/Application/src/Application/Model/ApplicationTable.php" />
-        <option value="$PROJECT_DIR$/public/index.php" />
-        <option value="$PROJECT_DIR$/config/autoload/global.php" />
         <option value="$PROJECT_DIR$/module/Auth/view/auth/auth/recover-password.phtml" />
         <option value="$PROJECT_DIR$/module/Auth/config/module.config.php" />
         <option value="$PROJECT_DIR$/module/Auth/view/auth/auth/logout.phtml" />
@@ -116,7 +134,6 @@
         <option value="$PROJECT_DIR$/module/Auth/src/Auth/Form/AuthForm.php" />
         <option value="$PROJECT_DIR$/module/Auth/view/auth/auth/index.phtml" />
         <option value="$PROJECT_DIR$/module/Auth/src/Auth/Controller/AuthController.php" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/module/Application/view/application/index/index.phtml" />
         <option value="$PROJECT_DIR$/ExperienceBuilderCC.xml" />
         <option value="$PROJECT_DIR$/module/Application/src/Protohype/Widget/Container.php" />
@@ -129,21 +146,38 @@
         <option value="$PROJECT_DIR$/module/Demo/Module.php" />
         <option value="$PROJECT_DIR$/module/Application/config/module.config.php" />
         <option value="$PROJECT_DIR$/module/Demo/view/demo/demo/index.phtml" />
-        <option value="$PROJECT_DIR$/module/Demo/view/layout/clean.phtml" />
         <option value="$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php" />
         <option value="$PROJECT_DIR$/module/Editor/src/Demo/Controller/DemoController.php" />
         <option value="$PROJECT_DIR$/module/Editor/Module.php" />
-        <option value="$PROJECT_DIR$/module/Editor/view/editor/editor/index.phtml" />
-        <option value="$PROJECT_DIR$/module/Editor/src/Editor/Controller/EditorController.php" />
         <option value="$PROJECT_DIR$/config/application.config.php" />
         <option value="$PROJECT_DIR$/module/Demo/config/module.config.php" />
-        <option value="$PROJECT_DIR$/module/Editor/config/module.config.php" />
-        <option value="$PROJECT_DIR$/module/Demo/src/Demo/Controller/DemoController.php" />
-        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Container.php" />
         <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/Attribs.php" />
-        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Attribs.php" />
-        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Base.php" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Form/Subscribe.php" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Form/Contact.php" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Form/Search.php" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Social/Feed/Facebook.php" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Social/Feed/Twitter.php" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Navigation.php" />
+        <option value="$PROJECT_DIR$/module/Editor/config/module.config.php" />
+        <option value="$PROJECT_DIR$/module/Editor/src/Editor/Controller/EditorController.php" />
+        <option value="$PROJECT_DIR$/module/Editor/view/layout/editor.phtml" />
+        <option value="$PROJECT_DIR$/module/Editor/view/editor/editor/index.phtml" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Image.php" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/main_container.phtml" />
+        <option value="$PROJECT_DIR$/module/Demo/view/layout/clean.phtml" />
         <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/container.phtml" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Container.php" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/main.phtml" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/MainContainer.php" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Attribs.php" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/image.phtml" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Base.php" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Social/Buttons.php" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/social/feed/twitter.phtml" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/social/buttons.phtml" />
+        <option value="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Video.php" />
+        <option value="$PROJECT_DIR$/module/Demo/src/Demo/Controller/DemoController.php" />
       </list>
     </option>
   </component>
@@ -152,9 +186,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="x" value="1429" />
+    <option name="y" value="87" />
     <option name="width" value="1920" />
-    <option name="height" value="803" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -228,6 +263,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="zendframework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protohype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protohype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="protohype" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -280,41 +333,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protohype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Protohype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Widget" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protohype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protohype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="module" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -330,9 +349,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/module" />
-      <recent name="$PROJECT_DIR$/module/Demo" />
-      <recent name="$PROJECT_DIR$/module/Auth/view/auth/auth" />
+      <recent name="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view" />
+      <recent name="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget" />
+      <recent name="$PROJECT_DIR$/module/Editor/view" />
+      <recent name="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Social/Feed" />
+      <recent name="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Form" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget" />
@@ -368,14 +389,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="803" extended-state="6" />
+    <frame x="1429" y="87" width="1920" height="1058" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36568213" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31941032" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17412141" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -391,6 +412,27 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31941032" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17412141" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -411,132 +453,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module/Auth/Module.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="449" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/autoload/global.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="112" selection-start="582" selection-end="582" vertical-scroll-proportion="0.13615733" vertical-offset="0" max-vertical-offset="661" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/autoload/local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="17" selection-start="574" selection-end="583" vertical-scroll-proportion="0.13615733" vertical-offset="0" max-vertical-offset="661" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zendframework/library/Zend/Form/FormInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="10" selection-start="386" selection-end="386" vertical-scroll-proportion="0.15885022" vertical-offset="0" max-vertical-offset="1425" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zendframework/library/Zend/Form/Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="42" selection-start="811" selection-end="811" vertical-scroll-proportion="-1.02118" vertical-offset="780" max-vertical-offset="13155" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/init_autoloader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="1" selection-start="995" selection-end="995" vertical-scroll-proportion="0.24205749" vertical-offset="125" max-vertical-offset="810" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="17" selection-start="492" selection-end="492" vertical-scroll-proportion="0.408472" vertical-offset="0" max-vertical-offset="661" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_namespaces.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="11" selection-start="537" selection-end="543" vertical-scroll-proportion="0.29500756" vertical-offset="0" max-vertical-offset="661" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_classmap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="685" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_psr4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="685" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_real.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.2708018" vertical-offset="179" max-vertical-offset="840" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5715" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/installed.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.6263237" vertical-offset="3719" max-vertical-offset="4380" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.5759599" vertical-offset="0" max-vertical-offset="855" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetLikedList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="18" selection-start="3826" selection-end="3826" vertical-scroll-proportion="0.6035313" vertical-offset="1724" max-vertical-offset="2685">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zendframework/library/Zend/View/Helper/HeadTitle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.0746951" vertical-offset="705" max-vertical-offset="3945">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zendframework/library/Zend/View/Helper/Navigation/AbstractHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="378" column="23" selection-start="11482" selection-end="11482" vertical-scroll-proportion="4.506098" vertical-offset="2444" max-vertical-offset="13995">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zendframework/library/Zend/View/Helper/HelperInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="10" selection-start="404" selection-end="404" vertical-scroll-proportion="0.16006097" vertical-offset="0" max-vertical-offset="656">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zendframework/library/Zend/View/Helper/AbstractHelper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="48" selection-start="442" selection-end="442" vertical-scroll-proportion="0.16006097" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zendframework/library/Zend/View/Resolver/ResolverInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="20" selection-start="635" selection-end="635" vertical-scroll-proportion="0.37914693" vertical-offset="0" max-vertical-offset="633">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zendframework/library/Zend/View/Resolver/TemplatePathStack.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="20" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.34597155" vertical-offset="606" max-vertical-offset="5010">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zendframework/library/Zend/View/Renderer/PhpRenderer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="20" selection-start="7035" selection-end="7035" vertical-scroll-proportion="0.33231708" vertical-offset="2287" max-vertical-offset="8460">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/zendframework/zendframework/library/Zend/View/Resolver/AggregateResolver.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="27" selection-start="1773" selection-end="1773" vertical-scroll-proportion="0.3902439" vertical-offset="764" max-vertical-offset="1965">
@@ -558,13 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="12" selection-start="7806" selection-end="7835" vertical-scroll-proportion="0.7278383" vertical-offset="1707" max-vertical-offset="2400">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Demo/Module.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="1" selection-start="37" selection-end="37" vertical-scroll-proportion="0.09146342" vertical-offset="0" max-vertical-offset="656">
@@ -579,23 +488,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="80" selection-start="3569" selection-end="3569" vertical-scroll-proportion="0.60213417" vertical-offset="835" max-vertical-offset="1530">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Demo/view/demo/demo/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="656">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Demo/view/layout/clean.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="151" selection-start="516" selection-end="516" vertical-scroll-proportion="0.29816514" vertical-offset="0" max-vertical-offset="654">
           <folding />
         </state>
       </provider>
@@ -623,51 +518,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Editor/view/editor/editor/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="654">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="17" selection-start="288" selection-end="288" vertical-scroll-proportion="0.16055046" vertical-offset="0" max-vertical-offset="654">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Editor/src/Editor/Controller/EditorController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="58" selection-start="221" selection-end="221" vertical-scroll-proportion="0.16055046" vertical-offset="0" max-vertical-offset="654">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="23" selection-start="144" selection-end="144" vertical-scroll-proportion="0.13761468" vertical-offset="0" max-vertical-offset="654">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Demo/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="32" selection-start="776" selection-end="776" vertical-scroll-proportion="0.5733945" vertical-offset="0" max-vertical-offset="654">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Auth/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="6" selection-start="788" selection-end="788" vertical-scroll-proportion="0.5504587" vertical-offset="0" max-vertical-offset="654">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Editor/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="19" selection-start="819" selection-end="819" vertical-scroll-proportion="0.5963303" vertical-offset="0" max-vertical-offset="654">
           <folding />
         </state>
       </provider>
@@ -707,40 +560,268 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Attribs.php">
+    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Form/Subscribe.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="68" selection-start="377" selection-end="377" vertical-scroll-proportion="-11.25" vertical-offset="0" max-vertical-offset="450">
+        <state line="12" column="24" selection-start="190" selection-end="190" vertical-scroll-proportion="0.16055046" vertical-offset="0" max-vertical-offset="654">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Demo/src/Demo/Controller/DemoController.php">
+    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Social/Feed/Twitter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="19" selection-start="529" selection-end="529" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="465">
+        <state line="14" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.20642202" vertical-offset="0" max-vertical-offset="654">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Base.php">
+    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Social/Feed/Facebook.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="0" selection-start="1772" selection-end="1772" vertical-scroll-proportion="-14.125" vertical-offset="741" max-vertical-offset="1485">
+        <state line="11" column="33" selection-start="205" selection-end="205" vertical-scroll-proportion="0.13761468" vertical-offset="0" max-vertical-offset="654">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Form/Search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="124" selection-end="164" vertical-scroll-proportion="0.1146789" vertical-offset="0" max-vertical-offset="654">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Form/Contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="179" selection-end="179" vertical-scroll-proportion="0.16055046" vertical-offset="0" max-vertical-offset="654">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Auth/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="60" selection-start="489" selection-end="489" vertical-scroll-proportion="0.4183267" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Flash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="526">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="25" selection-start="7633" selection-end="7633" vertical-scroll-proportion="0.6196319" vertical-offset="1767" max-vertical-offset="2400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Demo/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="8" selection-start="752" selection-end="858" vertical-scroll-proportion="0.65936255" vertical-offset="44" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Editor/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="26" selection-start="809" selection-end="822" vertical-scroll-proportion="0.7768924" vertical-offset="0" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Editor/view/editor/editor/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="12" selection-start="449" selection-end="449" vertical-scroll-proportion="0.4183267" vertical-offset="0" max-vertical-offset="502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Editor/view/layout/editor.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="70" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.8588957" vertical-offset="0" max-vertical-offset="2340">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Editor/src/Editor/Controller/EditorController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="39" selection-start="297" selection-end="297" vertical-scroll-proportion="0.2988048" vertical-offset="0" max-vertical-offset="502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zendframework/library/Zend/View/Helper/HeadTitle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1055777" vertical-offset="555" max-vertical-offset="3945">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="526">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/global.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="526">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="499">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="80" selection-start="3569" selection-end="3569" vertical-scroll-proportion="0.40239045" vertical-offset="1028" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="17" selection-start="288" selection-end="288" vertical-scroll-proportion="0.20916335" vertical-offset="0" max-vertical-offset="502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/zendframework/zendframework/library/Zend/View/Helper/EscapeCss.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="15" selection-start="384" selection-end="393" vertical-scroll-proportion="0.2689243" vertical-offset="0" max-vertical-offset="502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="161" column="0" selection-start="4198" selection-end="4198" vertical-scroll-proportion="3.9087453" vertical-offset="359" max-vertical-offset="3390">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Demo/view/layout/clean.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="735" selection-end="735" vertical-scroll-proportion="0.4621514" vertical-offset="38" max-vertical-offset="615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/main.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="938">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/MainContainer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="29" selection-start="555" selection-end="555" vertical-scroll-proportion="0.42669585" vertical-offset="0" max-vertical-offset="914">
           <folding>
-            <element signature="e#35#65#0" expanded="true" />
+            <element signature="e#6#116#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Container.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="34" selection-start="395" selection-end="395" vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="375">
+        <state line="14" column="24" selection-start="222" selection-end="222" vertical-scroll-proportion="0.14770241" vertical-offset="0" max-vertical-offset="914">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/container.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="2" selection-start="68" selection-end="68" vertical-scroll-proportion="0.13657056" vertical-offset="0" max-vertical-offset="659">
+        <state line="17" column="13" selection-start="454" selection-end="454" vertical-scroll-proportion="0.27899343" vertical-offset="0" max-vertical-offset="914">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Image.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="25" selection-start="186" selection-end="186" vertical-scroll-proportion="0.11487965" vertical-offset="0" max-vertical-offset="914">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Attribs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="32" selection-start="225" selection-end="225" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="825">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/image.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.11487965" vertical-offset="0" max-vertical-offset="914">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Social/Buttons.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="40" selection-start="785" selection-end="800" vertical-scroll-proportion="-18.125" vertical-offset="0" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Navigation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="35" selection-start="197" selection-end="197" vertical-scroll-proportion="0.11487965" vertical-offset="0" max-vertical-offset="914">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/social/buttons.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="10" selection-start="1476" selection-end="1476" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="495">
+          <folding>
+            <marker date="1408568640000" expanded="true" signature="1104:1282" placeholder="..." />
+            <marker date="1408568640000" expanded="true" signature="1104:1426" placeholder="..." />
+            <marker date="1408568640000" expanded="true" signature="1125:1282" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/view/social/feed/twitter.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.01664817" vertical-offset="0" max-vertical-offset="901">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="35" selection-start="229" selection-end="229" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="255">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/protohype/library/Protohype/Widget/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="316" selection-end="316" vertical-scroll-proportion="7.5" vertical-offset="420" max-vertical-offset="1350">
+          <folding>
+            <element signature="e#35#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Demo/src/Demo/Controller/DemoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="51" selection-start="1029" selection-end="1047" vertical-scroll-proportion="0.21225382" vertical-offset="211" max-vertical-offset="1185">
+          <folding>
+            <element signature="e#119#148#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

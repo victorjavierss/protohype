@@ -14,12 +14,12 @@ class Container extends WidgetBase{
 
     protected $_template = 'container';
 
-    public function __construct(){
-        parent::__construct();
-        $this->_attribs[ 'has_wrapper' ] = true;
+
+    public function setHasWrapper( $hasWrapper ){
+        $this->_attribs->{Attribs::HAS_WRAPPER} = $hasWrapper;
     }
 
-    public function setHasWrapper( $has ){
-        $this->_attribs[ 'has_wrapper' ] = $has;
+    public function setHtmlTag( $tag ){
+        $this->_attribs->{Attribs::HTML_TAG} = $tag;
     }
 }

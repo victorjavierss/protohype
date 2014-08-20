@@ -9,22 +9,17 @@ abstract class Base  {
 
     const MAX_COLUMNS = 12;
     const MIN_COLUMNS = 2;
-    const DEFAULT_COLUMNS = 4;
-
-    const TAG_DIV     = 'div';
-    const TAG_HEADER  = 'header';
-    const TAG_FOOTER  = 'footer';
-    const TAG_SECTION = 'section';
-
 
     protected $_template = '';
 
     protected $_containerItems = array();
     protected $_attribs = array();
-    protected $_tag     = self::TAG_DIV;
 
-    public function __construct(){
-        $this->_properties[ Attribs::COLUMNS ] = self::DEFAULT_COLUMNS;
+    protected $_viewManager   = null;
+
+    public function __construct(  $viewHelperManager ){
+        $this->_viewManager = $viewHelperManager;
+        $this->_attribs = new Attribs( array() );
     }
 
     public function addContainer( Base $container ){
@@ -36,7 +31,7 @@ abstract class Base  {
     }
 
     public function setAttribs( $attribs ){
-        $this->_attribs = $attribs;
+        $this->_attribs = new Attribs($attribs);
     }
 
     public function render(){
@@ -50,7 +45,7 @@ abstract class Base  {
             'protohype/'.$this->_template => __DIR__ . '/view/'.$this->_template.'.phtml',
         ) );
 
-        $resolver->attach($map);
+        $resolver->attach( $map );
 
         $innerContent = '';
 
@@ -59,7 +54,6 @@ abstract class Base  {
         }
 
         $viewModel = new ViewModel( array(
-            'tag' => $this->_tag,
             'attribs' => $this->getAttribs(),
             'content' => $innerContent,
         ) );
@@ -70,25 +64,22 @@ abstract class Base  {
     }
 
     public function setColumns( $columns ){
-
         if(  $columns >= self::MIN_COLUMNS && $columns <= self::MAX_COLUMNS ){
-            $this->_properties[ Attribs::COLUMNS ] = $columns;
+            $this->_attribs->{Attribs::COLUMNS} = $columns;
         }else{
             throw new \Exception('Columns Out of Bounds');
         }
     }
 
-    public function getColumns(  ){
-        return $this->_properties[ Attribs::COLUMNS ]?:self::DEFAULT_COLUMNS;
+    public function getColumns( ){
+        return $this->_attribs->{Attribs::COLUMNS};
     }
 
     public function getAttribs(){
-        return new Attribs($this->_attribs);
+        return $this->_attribs;
     }
 
-    /*
     public function __toString(){
         return $this->render();
-    }*/
-
+    }
 }

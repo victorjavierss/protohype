@@ -1,0 +1,28 @@
+<?php
+use Protohype\Widget\Attribs;
+$attribs = $this->attribs;
+?>
+
+<?php if($attribs->twitterEnabled) {?>
+
+<a href="https://twitter.com/<?php echo $attribs->twitterAccount?>" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @<?php echo $attribs->twitterAccount?></a>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<?php } ?>
+
+<?php if($attribs->facebookEnabled) {?>
+<div class="fb-like-box" data-href="https://www.facebook.com/<?php echo $attribs->facebookAccount;?>"
+     data-colorscheme="light"
+     data-show-faces="<?php echo $attribs->fbAttribs['show_faces']?'true':'false' ?>"
+     data-header="<?php echo $attribs->fbAttribs['show_header']?'true':'false' ?>"
+     data-stream="<?php echo $attribs->fbAttribs['show_posts']?'true':'false' ?>"
+     data-show-border="<?php echo $attribs->fbAttribs['show_border']?'true':'false' ?>"></div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=110507458980345&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+<?php } ?>

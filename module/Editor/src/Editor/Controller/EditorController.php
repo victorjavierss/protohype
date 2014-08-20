@@ -13,6 +13,7 @@ use Protohype\ProtohypeActionController;
 class EditorController extends ProtohypeActionController {
 
     public function indexAction(){
+        $this->layout('layout/editor');
         return array();
     }
 }
