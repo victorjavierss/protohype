@@ -202,20 +202,50 @@ li.dropdown.dark>a:focus, li.dropdown.open.dark>a{background-color:#363636}
 /* Pages */
 
 
-
-
 .show-grid [class^="col-"] {
     padding-top: 10px;
     padding-bottom: 10px;
     border: 1px solid #ddd;
     background-color: #eee !important;
+    height: 100%;
 }
 
 .show-grid {
-    margin: 15px 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 37px;
 }
 
 .websites-container .icon{
     font-size: 50px;
     text-align: center;
+}
+
+.page-editor .main-container{
+    border: 1px dashed #8f8f8f;
+    min-height: 150px;
+    position: relative;
+}
+
+.page-editor .main-container .container-config{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.page-editor .main-container .container-config .properties-config{
+    width: 262px;
+    background: #FFF;
+    display: none;
+    padding: 15px;
+    border: solid 1px slategray;
+}
+
+.page-editor .main-container .container-config .opener{
+    padding: 10px;
+    cursor: pointer;
+    float: right;
 }

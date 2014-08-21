@@ -40,7 +40,6 @@ class DemoController extends AbstractActionController {
         $socialButtons->enableFacebook(TRUE);
         $socialButtons->setFacebookAttribs(array('show_posts'=>true));
 
-
         $mainContainer->setTitle('Title From Main Container');
         $mainContainer->setBackground('#4f4e52');
 
@@ -54,9 +53,8 @@ class DemoController extends AbstractActionController {
         $mainContent->setColumns(12);
         $mainContent->addContainer($sidebar);
         $mainContent->addContainer($content);
-        $mainContent->addContainer($sidebar);
 
-        $sidebar->setColumns(3);
+        $sidebar->setColumns(4);
         $sidebar->setHasWrapper(FALSE);
         $content->setColumns(6);
         $content->setHasWrapper(FALSE);
@@ -76,4 +74,4 @@ class DemoController extends AbstractActionController {
         $render = $mainContainer->render();
         return array('final_result'=>$render);
     }
-} 
+}
