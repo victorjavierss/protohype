@@ -233,6 +233,7 @@ li.dropdown.dark>a:focus, li.dropdown.open.dark>a{background-color:#363636}
 .page-editor .main-container{
     min-height: 150px;
     position: relative;
+    padding: 0 15px;
 }
 
 .page-editor .main-container .container-config{
@@ -250,6 +251,7 @@ li.dropdown.dark>a:focus, li.dropdown.open.dark>a{background-color:#363636}
     position: absolute;
     right: 0;
     top: 25px;
+    z-index: 1000;
 }
 
 .page-editor .main-container .container-config .opener{

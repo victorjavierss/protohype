@@ -63,7 +63,7 @@ ContainerWrapper.prototype.init = function() {
     var widget = this.widget;
     var propertyDiv= $("<div class='widget-property'></div>");
     propertyDiv.append( this.label );
-    propertyDiv.append( $("<input type='checkbox' id='"+widget.guid+"-has-wrapper'></div>") );
+    propertyDiv.append( $("<input type='checkbox' id='"+widget.guid+"-has-wrapper' />") );
     $('.properties-config', widget.container).append(propertyDiv);
 
     $('#'+widget.guid+'-has-wrapper').on('click', function(evt){
@@ -75,5 +75,32 @@ ContainerWrapper.prototype.init = function() {
             $(widget.container).removeClass('container');
         }
     });
+};
 
+var ColumnCount = function( widget ){
+    this.widget = widget;
+    this.init();
 }
+
+ColumnCount.prototype.widget = null;
+ColumnCount.prototype.label = '# Columns';
+ColumnCount.prototype.actualValue = 3;
+ColumnCount.prototype.init = function() {
+    var widget = this.widget;
+    var property = this;
+    var propertyDiv= $("<div class='widget-property'></div>");
+    propertyDiv.append( this.label );
+    propertyDiv.append( $("<input type='range' id='"+widget.guid+"-column-count' min='2' max='12' value='3' />") );
+    $('.properties-config', widget.container).append(propertyDiv);
+
+    $('#'+widget.guid+'-column-count').on('change', function(evt){
+
+        widget.attribs.columns = $(this).val();
+
+        $(widget.container).removeClass('col-md-' + property.actualValue );
+        $(widget.container).addClass('col-md-' + widget.attribs.columns );
+
+        property.actualValue = widget.attribs.columns;
+
+    });
+};

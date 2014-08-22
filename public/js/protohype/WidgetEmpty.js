@@ -22,7 +22,8 @@ WidgetEmpty.prototype.attribs = {};
 WidgetEmpty.prototype.init = function(){
     WidgetEmpty.prototype.widgets = new WidgetList();
     var contentToAppend = this.layout.replace('@GUID@', this.guid );
-    $(this.target).append( contentToAppend );
+
+    $( contentToAppend ).insertBefore( $( '.widget-add', this.target) );
 
     this.container = $('#'+this.guid);
 
@@ -33,5 +34,6 @@ WidgetEmpty.prototype.init = function(){
     });
 
     new BackgroundSelector( this, 'container_background','Background', '#'+this.guid );
+    new ColumnCount( this );
 
 }

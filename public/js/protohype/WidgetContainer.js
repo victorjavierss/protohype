@@ -40,6 +40,7 @@ WidgetContainer.prototype.init = function(){
 }
 
 WidgetContainer.prototype.add = function( widget ){
+
     if (typeof registeredWidgets[ widget ] != 'undefined' && registeredWidgets[ widget ]){
         this.widgets.add( new window[ widget ] ( this.container) );
     }
