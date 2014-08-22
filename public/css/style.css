@@ -202,7 +202,7 @@ li.dropdown.dark>a:focus, li.dropdown.open.dark>a{background-color:#363636}
 /* Pages */
 
 
-.show-grid [class^="col-"] {
+.show-grid [class*="col-"] {
     padding-top: 10px;
     padding-bottom: 10px;
     border: 1px solid #ddd;

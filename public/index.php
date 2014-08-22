@@ -1,7 +1,7 @@
 <?php
 
-$env = getenv('APPLICATION_ENV') ?: 'production';
-ini_set("display_errors", $env==='production'?0:1);
+//$env = getenv('APPLICATION_ENV') ?: 'production';
+ini_set("display_errors", 1);
 
 
 /**
