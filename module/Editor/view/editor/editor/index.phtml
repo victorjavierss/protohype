@@ -1,7 +1,9 @@
 <script type="text/javascript">
+    var mainContainer = null;
     (function($) {
         $(document).on('ready', function() {
-            new WidgetContainer('body');
+            mainContainer = new WidgetContainer('body');
+            new WidgetAddWidget( mainContainer );
         });
     })(jQuery);
 </script>

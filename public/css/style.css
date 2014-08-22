@@ -206,17 +206,23 @@ li.dropdown.dark>a:focus, li.dropdown.open.dark>a{background-color:#363636}
     padding-top: 10px;
     padding-bottom: 10px;
     border: 1px solid #ddd;
-    background-color: #eee !important;
-    height: 100%;
 }
 
 .show-grid {
-    margin: 0;
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    top: 37px;
+    box-shadow: 0 0 1px;
+    border: 1px dashed #8f8f8f;
+}
+
+.height-1{
+    height: 150px;
+}
+
+.height-2{
+    height: 300px;
+}
+
+.height-3{
+    height: 450px;
 }
 
 .websites-container .icon{
@@ -225,7 +231,6 @@ li.dropdown.dark>a:focus, li.dropdown.open.dark>a{background-color:#363636}
 }
 
 .page-editor .main-container{
-    border: 1px dashed #8f8f8f;
     min-height: 150px;
     position: relative;
 }
@@ -242,10 +247,17 @@ li.dropdown.dark>a:focus, li.dropdown.open.dark>a{background-color:#363636}
     display: none;
     padding: 15px;
     border: solid 1px slategray;
+    position: absolute;
+    right: 0;
+    top: 25px;
 }
 
 .page-editor .main-container .container-config .opener{
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
     float: right;
+}
+
+.page-editor .main-container .container-config .opener:hover{
+    text-shadow: 0 0 2px;
 }
