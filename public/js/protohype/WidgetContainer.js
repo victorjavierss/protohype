@@ -35,10 +35,12 @@ WidgetContainer.prototype.init = function(){
         $('#'+plugin.guid+' > .container-config .properties-config').toggle();
     });
 
-    WidgetContainer.prototype.attribs[0] = new BackgroundSelector( this, '#'+this.guid );;
-    WidgetContainer.prototype.attribs[0] = new ContainerWrapper( this );
+    WidgetContainer.prototype.attribs['background'] = new BackgroundSelector( this, '#'+this.guid );;
+    WidgetContainer.prototype.attribs['wrapper'] = new ContainerWrapper( this );
+    WidgetContainer.prototype.attribs['column'] = new ColumnCount( this, 3, 12 );
+    WidgetContainer.prototype.attribs['column'].value = 6;
 
-    new WidgetAddWidget( this, [ 'WidgetEmpty' ] );
+    new WidgetAddWidget( this, {Basic:{widgets:['WidgetEmpty'], open:true}}  );
 };
 
 WidgetContainer.prototype.add = function( widget ){

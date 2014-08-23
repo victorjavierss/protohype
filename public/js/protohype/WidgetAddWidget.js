@@ -33,21 +33,32 @@ WidgetAddWidget.prototype.init = function(){
 
     var plugin = this;
 
-    $.each(this.registeredWidgets, function(index,widget){
+    $.each(this.registeredWidgets, function(widgetCategory, options){
+        var collapseGUID = guid();
+        var open = (typeof options.open != 'undefined' && options.open )? 'in' :'';
+        var panel =   '<div class="panel panel-default">'
+            + '<div class="panel-heading">'
+            + '<h5 class="panel-title">'
+            + '<a data-toggle="collapse" data-parent="#accordion" href="#'+collapseGUID+'">'+widgetCategory+'</a>'
+            + '</h5></div><div id="'+collapseGUID+'" class="panel-collapse collapse '+open+'">' +
+            ' <div class="panel-body"></div></div></div>';
 
-        var widgetP = window[widget].prototype;
-        var button = $('<button type="button" class="btn btn-default" data-type="'+widget+'"  '
-            +'title="'+widgetP.description+'">'
-            +'<i class="fa '+widgetP.icon+'"  data-type="' + widget + '" ></i> '+widgetP.description+'</button>');
+        $('.available-widgets',plugin.container).append(panel);
 
-        $(button).on('click', function(evt){
-            console.log(  evt.target, $(evt.target).data('type'), plugin.target);
+        $.each(options.widgets, function(index, widget){
+            if( typeof window[widget] != 'undefined' ){
+                var widgetP = window[widget].prototype;
+                var button = $('<button type="button" class="btn btn-default" data-type="'+widget+'"  '
+                    +'title="'+widgetP.description+'">'
+                    +'<i class="fa '+widgetP.icon+'" data-type="'+widget+'">'+widgetP.description+'</button>');
 
-            plugin.target.add( $(evt.target).data('type') );
+                $(button).on('click', function(evt){
+                    plugin.target.add( $(evt.target).data('type') );
+                });
+
+                $('.available-widgets #'+collapseGUID+' .panel-body',plugin.container).append(button);
+            }
         });
-
-
-        $('.available-widgets', plugin.container).append(button);
 
     } );
 
