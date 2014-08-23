@@ -244,9 +244,15 @@ div[class*="col-"]{
 }
 
 .page-editor .widget-add.clicked{
-    transform: translate(500px,250px);
+    transform: translate(-50%,-50%);
     position: absolute;
     z-index: 10000000;
+    top: 50%;
+    left: 50%;
+}
+
+.page-editor .widget-add.clicked .content{
+    border: 2px solid #6a8789;
 }
 
 .page-editor .widget-add .available-widgets,

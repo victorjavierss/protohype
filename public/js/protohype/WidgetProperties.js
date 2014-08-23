@@ -7,7 +7,7 @@ var guid = (function() {
     };
 })();
 
-var registeredWidgets = { 'Basic': ['WidgetContainer','WidgetEmpty'] };
+var registeredWidgets = ['WidgetContainer','WidgetEmpty'];
 
 
 var BackgroundSelector = function( widget, selector, label){
