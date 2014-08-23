@@ -1,13 +1,14 @@
-var WidgetAddWidget = function( target ){
+var WidgetAddWidget = function( target, widgets ){
     this.guid = guid();
     this.target = target;
+    this.registeredWidgets = widgets;
     this.init();
 }
 
 WidgetAddWidget.prototype.guid = 0;
 WidgetAddWidget.prototype.target = '';
 WidgetAddWidget.prototype.widgets = null;
-
+WidgetAddWidget.prototype.registeredWidgets = {};
 WidgetAddWidget.prototype.layout =    "<div id='@GUID@' class='col-md-2 col-sm-2 widget-add'><div class='height-1 content'>"
                                     + "<div class='add-widget'> <div class='outer-circle'><div class='inner-circle'><span>+</span></div></div> </div>"
                                     + "<div class='available-widgets'></div>"
@@ -32,7 +33,7 @@ WidgetAddWidget.prototype.init = function(){
 
     var plugin = this;
 
-    $.each(registeredWidgets, function(index,widget){
+    $.each(this.registeredWidgets, function(index,widget){
 
         var widgetP = window[widget].prototype;
         var button = $('<button type="button" class="btn btn-default" data-type="'+widget+'"  '
@@ -40,6 +41,8 @@ WidgetAddWidget.prototype.init = function(){
             +'<i class="fa '+widgetP.icon+'"  data-type="' + widget + '" ></i> '+widgetP.description+'</button>');
 
         $(button).on('click', function(evt){
+            console.log(  evt.target, $(evt.target).data('type'), plugin.target);
+
             plugin.target.add( $(evt.target).data('type') );
         });
 

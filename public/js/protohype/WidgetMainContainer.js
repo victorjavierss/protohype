@@ -26,7 +26,7 @@ WidgetMainContainer.prototype.init = function(){
 }
 
 WidgetMainContainer.prototype.add = function( widget ){
-    if (typeof window[ widget ] != 'undefined' ){
+    if (typeof window[ widget ] == 'function' ){
         this.widgets.add( new window[ widget ] ( this.container) );
     }
 };
