@@ -11,11 +11,11 @@ WidgetEmpty.prototype.target = '';
 WidgetEmpty.prototype.container = null;
 WidgetEmpty.prototype.widgets = null;
 
-WidgetEmpty.prototype.layout = "<div id='@GUID@' class='col-md-3 height-1'>"
+WidgetEmpty.prototype.layout = "<div id='@GUID@' class='widget col-md-3'>"
                                     +"<div class='container-config'>"
                                     +"<div class='opener'><i class='fa fa-cogs'></i></div>"
                                     +"<div class='properties-config'></div>"
-                                    +"</div>";
+                                    +"</div><div class='content height-1'></div>";
 
 WidgetEmpty.prototype.attribs = {};
 
