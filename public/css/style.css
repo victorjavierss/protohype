@@ -3,7 +3,7 @@ body {
     padding-top: 90px;
     background-color: #f8f8f8;
     -webkit-font-smoothing: antialiased;
-    font-family: Roboto,Helvetica Neue, Helvetica, Arial;
+    font-family: Roboto,Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #3B5957;
 }
 
@@ -162,31 +162,46 @@ body .main-content{
 
 .page-editor .container-config{
     position: absolute;
-    top: 0;
-    right: 0;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    background-color: #E8466D;
+    z-index: 1;
 }
 
-.page-editor .container-config .properties-config{
-    width: 262px;
-    background: #FFF;
+.page-editor div[class*="widget-type-"]{
+    margin-bottom: 30px;
+}
+
+.page-editor .container-config .properties-config{ /* used with bubble classes */
     display: none;
     padding: 15px;
-    border: solid 1px slategray;
     position: absolute;
-    right: 0;
-    top: 25px;
+    left: 0;
+    top: 44px;
     z-index: 1000;
 }
 
 .page-editor .container-config .opener{
-    padding: 5px;
+    background-color: #C1385F;
+    padding-left: 10px;
+    padding-right: 10px;
     cursor: pointer;
+    float:left;
+    font-size: 21px;
+    color:white;
+}
+
+.page-editor .container-config .delete{
+    padding-right: 10px;
+    cursor: pointer;   
     float: right;
-    /*background-color: #E8466D;*/
+    font-size: 21px;
+    color:white;
 }
 
 .page-editor .container-config .opener:hover{
-    text-shadow: 0 0 2px;
+    /*text-shadow: 0 0 2px;*/
 }
 
 .page-editor .widget-add .add-widget{
@@ -273,6 +288,46 @@ body .main-content{
     display: none;
 }
 
+
 .widget-type-container > .content > div{
     padding:0;
 }
+/******** BUBBLE *********/
+
+.bubble {
+    position: relative;
+    width: 250px;
+    height: 173px;
+    padding: 0px;
+    background: #e6e6e6;
+    border: #7a7a7a solid 1px;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(97, 97, 97, 0.5);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(97, 97, 97, 0.5);
+    box-shadow: 0px 0px 14px 0px rgba(97, 97, 97, 0.5);
+}
+
+  .bubble:after {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: 4px;
+    border-style: solid;
+    border-width: 0 14px 13px;
+    border-color: #e6e6e6 transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
+  .bubble:before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 4px;
+    border-style: solid;
+    border-width: 0 14px 13px;
+    border-color: #7a7a7a transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+  }
