@@ -258,6 +258,7 @@ li.dropdown.dark>a:focus, li.dropdown.open.dark>a{background-color:#363636}
     padding: 5px;
     cursor: pointer;
     float: right;
+    background-color: #E8466D;
 }
 
 .page-editor .main-container .container-config .opener:hover{
