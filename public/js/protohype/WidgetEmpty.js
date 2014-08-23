@@ -16,7 +16,6 @@ WidgetEmpty.prototype.layout = "<div id='@GUID@' class='widget col-md-3 widget-t
                                     +"<div class='opener'><i class='fa fa-cog'></i></div>"
                                     +"<div class='delete'><i class='fa fa-trash-o'></i></div>"
                                     +"<div class='properties-config bubble'></div>"
-                                    //+"<div class='properties-config'></div>"
                                     +"</div>"
                                     +"<div class='content height-1'></div>"
                                     +"</div>";
@@ -33,7 +32,10 @@ WidgetEmpty.prototype.init = function(){
     var plugin = this;
     $('.opener', this.container).on('click', function(evt){
         $('.properties-config, .arrow-up', plugin.container).toggle();
+        //$('.widget').css('z-index',1);
+        //$('#'+plugin.guid).css('z-index',100);
     });
     this.attribs['background'] = new BackgroundSelector( this, 'container_background','Background', '#'+this.guid );
     this.attribs['columnCount'] = new ColumnCount( this );
+    this.attribs['columnCount'].value = 3;
 }

@@ -288,11 +288,11 @@ body .main-content{
     display: none;
 }
 
-
 .widget-type-container > .content > div{
     padding:0;
 }
-/******** BUBBLE *********/
+
+/* .properties-config Bubble */
 
 .bubble {
     position: relative;

@@ -96,8 +96,8 @@ ColumnCount.prototype.init = function() {
     propertyDiv.append( $("<input type='range' id='"+widget.guid+"-column-count' min='2' max='12' value='3' />") );
     $('.properties-config', widget.container).append(propertyDiv);
     $('#'+widget.guid+'-column-count').on('change', function(evt){
-        $(widget.container).removeClass('col-md-' + property.columns );
-        property.columns = $(this).val();
-        $(widget.container).addClass('col-md-' + widget.attribs.columns );
+        $(widget.container).removeClass('col-md-' + property.value );
+        property.value = $(this).val();
+        $(widget.container).addClass('col-md-' + property.value );
     });
 };
