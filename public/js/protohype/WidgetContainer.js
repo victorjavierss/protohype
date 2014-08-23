@@ -5,26 +5,25 @@ var WidgetContainer = function( target ){
 }
 
 WidgetContainer.prototype.guid = 0;
+WidgetContainer.prototype.description = 'Container';
+WidgetContainer.prototype.icon = 'fa-square-o';
 WidgetContainer.prototype.target = '';
 WidgetContainer.prototype.container = null;
 WidgetContainer.prototype.widgets = null;
 
-WidgetContainer.prototype.layout = "<div id='@GUID@' class='main-container show-grid container-fluid'>"
+WidgetContainer.prototype.layout = "<div id='@GUID@' class='height-1 col-md-6'>"
                                     +"<div class='container-config'>"
                                     +"<div class='opener'><i class='fa fa-cogs'></i></div>"
                                     +"<div class='properties-config'></div>"
                                     +"</div><div class='content clearfix'></div>";
 
-WidgetContainer.prototype.attribs = {
-    container_background : "#f8f8f8",
-    site_background : "#f8f8f8",
-    hasWrapper : false
-};
+WidgetContainer.prototype.attribs = {};
 
 WidgetContainer.prototype.init = function(){
-    WidgetContainer.prototype.widgets = new WidgetList();
+    this.widgets = new WidgetList();
     var contentToAppend = this.layout.replace('@GUID@', this.guid );
-    $(this.target).append( contentToAppend );
+
+    $( contentToAppend ).insertBefore( $( '.widget-add', this.target) );
 
     this.container = $('#'+this.guid);
 
@@ -34,9 +33,8 @@ WidgetContainer.prototype.init = function(){
         $('#'+plugin.guid+' > .container-config .properties-config').toggle();
     });
 
-    new BackgroundSelector( this, 'site_background', 'Site Background' );
-    new BackgroundSelector( this, 'container_background','Container Background', '#'+this.guid );
-    new ContainerWrapper( this );
+    WidgetContainer.prototype.attribs[0] = new BackgroundSelector( this, '#'+this.guid );;
+    WidgetContainer.prototype.attribs[0] = new ContainerWrapper( this );
 }
 
 WidgetContainer.prototype.add = function( widget ){

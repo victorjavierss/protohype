@@ -2,7 +2,7 @@
     var mainContainer = null;
     (function($) {
         $(document).on('ready', function() {
-            mainContainer = new WidgetContainer('body');
+            mainContainer = new WidgetMainContainer('body');
             new WidgetAddWidget( mainContainer );
         });
     })(jQuery);
