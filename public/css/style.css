@@ -3,7 +3,7 @@ body {
     padding-top: 90px;
     background-color: #f8f8f8;
     -webkit-font-smoothing: antialiased;
-    font-family: Roboto,Helvetica Neue, Helvetica, Arial;
+    font-family: Roboto,Helvetica Neue, Helvetica, Arial, sans-serif;
     color: #3B5957;
 }
 
@@ -123,17 +123,14 @@ li.dropdown>a:hover, li.dropdown>a:focus, li.dropdown.open>a{background-color: #
     left: auto;
 }
 
+body .main-content{
+    padding-top: 15px;
+}
 
 /* Pages */
 .show-grid [class*="col-"] > div.content {
     border: 1px solid #ddd;
 }
-
-
-div[class*="col-"]{
-    padding: 15px 15px 0 15px;
-}
-
 
 .show-grid .content{
     box-shadow: 0 0 1px;
@@ -141,15 +138,15 @@ div[class*="col-"]{
 }
 
 .height-1{
-    height: 150px;
+    min-height: 150px;
 }
 
 .height-2{
-    height: 300px;
+    min-height: 300px;
 }
 
 .height-3{
-    height: 450px;
+    min-height: 450px;
 }
 
 .websites-container .icon{
@@ -169,6 +166,11 @@ div[class*="col-"]{
     left: 15px;
     right: 15px;
     background-color: #E8466D;
+    z-index: 1;
+}
+
+.page-editor div[class*="widget-type-"] > .content{
+    margin-bottom: 30px;
 }
 
 .page-editor .container-config .properties-config{ /* used with bubble classes */
@@ -231,12 +233,6 @@ div[class*="col-"]{
 
 .page-editor .widget-add{
     position: relative;
-    z-index: 999;
-    margin: 1em 0;
-    padding: 4px;
-    background: #fcfaf0;
-    border-radius: 1em;
-    font-size: 11px;
     -webkit-transition: .6s cubic-bezier(0,1.5,.5,1);
     -moz-transition: .6s cubic-bezier(0,1.5,.5,1);
     -o-transition: .6s cubic-bezier(0,1.5,.5,1);
@@ -245,7 +241,7 @@ div[class*="col-"]{
 
 .page-editor .widget-add.clicked{
     transform: translate(-50%,-50%);
-    position: absolute;
+    position: fixed;
     z-index: 10000000;
     top: 50%;
     left: 50%;
@@ -292,9 +288,13 @@ div[class*="col-"]{
     display: none;
 }
 
+.widget-type-container > .content > div{
+    padding:0;
+}
+
 /* .properties-config Bubble */
 
-  .bubble {
+.bubble {
     position: relative;
     width: 250px;
     height: 173px;
@@ -330,4 +330,4 @@ div[class*="col-"]{
     display: block;
     width: 0;
     z-index: 0;
-}
+  }
