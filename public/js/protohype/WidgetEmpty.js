@@ -16,7 +16,6 @@ WidgetEmpty.prototype.layout = "<div id='@GUID@' class='widget col-md-3'>"
                                     +"<div class='opener'><i class='fa fa-cog'></i></div>"
                                     +"<div class='delete'><i class='fa fa-trash-o'></i></div>"
                                     +"<div class='properties-config bubble'></div>"
-                                    //+"<div class='properties-config'></div>"
                                     +"</div>"
                                     +"<div class='content height-1'></div>"
                                     +"</div>";

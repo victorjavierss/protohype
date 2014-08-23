@@ -292,7 +292,7 @@ div[class*="col-"]{
     display: none;
 }
 
-/******** BUBBLE *********/
+/* .properties-config Bubble */
 
   .bubble {
     position: relative;
