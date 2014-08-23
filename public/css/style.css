@@ -169,7 +169,7 @@ body .main-content{
     z-index: 1;
 }
 
-.page-editor div[class*="widget-type-"]{
+.page-editor div[class*="widget-type-"] > .content{
     margin-bottom: 30px;
 }
 
