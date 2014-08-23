@@ -17,7 +17,7 @@ var BackgroundSelector = function( widget, attrib, label, selector){
     if( label ){
         this.label = label
     }
-    this.target = selector ? selector: widget.target;
+    this.target = selector ? selector : widget.target;
     this.init();
 }
 
@@ -45,9 +45,10 @@ BackgroundSelector.prototype.init = function() {
     propertyDiv.append( this.label+': ' );
     propertyDiv.append(select);
     $('.properties-config', widget.container).append(propertyDiv);
-    $('select#'+widget.guid+'-colorpicker-picker-'+this.guid).simplecolorpicker();
+    $('select#'+widget.guid+'-colorpicker-picker-'+this.guid).simplecolorpicker({picker:true});
     $('select#'+widget.guid+'-colorpicker-picker-'+this.guid).on('change', function(evt) {
-        $(property.target).css('background-color', $(evt.target).val() );
+        var selector = ( property.target == 'body' ) ? property.target :  property.target + '> .content';
+        $(selector).css('background-color', $(evt.target).val() );
         widget.attribs[property.attrib] = $(evt.target).val();
     });
 };
@@ -84,7 +85,6 @@ var ColumnCount = function( widget ){
 
 ColumnCount.prototype.widget = null;
 ColumnCount.prototype.label = '# Columns';
-ColumnCount.prototype.actualValue = 3;
 ColumnCount.prototype.init = function() {
     var widget = this.widget;
     var property = this;
@@ -94,13 +94,8 @@ ColumnCount.prototype.init = function() {
     $('.properties-config', widget.container).append(propertyDiv);
 
     $('#'+widget.guid+'-column-count').on('change', function(evt){
-
+        $(widget.container).removeClass('col-md-' + widget.attribs.columns );
         widget.attribs.columns = $(this).val();
-
-        $(widget.container).removeClass('col-md-' + property.actualValue );
         $(widget.container).addClass('col-md-' + widget.attribs.columns );
-
-        property.actualValue = widget.attribs.columns;
-
     });
 };

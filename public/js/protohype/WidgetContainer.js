@@ -9,11 +9,11 @@ WidgetContainer.prototype.target = '';
 WidgetContainer.prototype.container = null;
 WidgetContainer.prototype.widgets = null;
 
-WidgetContainer.prototype.layout = "<div id='@GUID@' class='main-container show-grid clearfix'>"
+WidgetContainer.prototype.layout = "<div id='@GUID@' class='main-container show-grid container-fluid'>"
                                     +"<div class='container-config'>"
                                     +"<div class='opener'><i class='fa fa-cogs'></i></div>"
                                     +"<div class='properties-config'></div>"
-                                    +"</div>";
+                                    +"</div><div class='content clearfix'></div>";
 
 WidgetContainer.prototype.attribs = {
     container_background : "#f8f8f8",
@@ -40,7 +40,6 @@ WidgetContainer.prototype.init = function(){
 }
 
 WidgetContainer.prototype.add = function( widget ){
-
     if (typeof registeredWidgets[ widget ] != 'undefined' && registeredWidgets[ widget ]){
         this.widgets.add( new window[ widget ] ( this.container) );
     }

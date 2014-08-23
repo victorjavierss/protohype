@@ -8,16 +8,16 @@ WidgetAddWidget.prototype.guid = 0;
 WidgetAddWidget.prototype.target = '';
 WidgetAddWidget.prototype.widgets = null;
 
-WidgetAddWidget.prototype.layout =    "<div id='@GUID@' class='col-md-3 height-1 widget-add'>"
-                                    + "<div class='add-widget'> <i class='fa fa-plus-circle'></i></div>"
+WidgetAddWidget.prototype.layout =    "<div id='@GUID@' class='col-md-2 widget-add'><div class='height-1 content'>"
+                                    + "<div class='add-widget'> <div class='outer-circle'><div class='inner-circle'><span>+</span></div></div> </div>"
                                     + "<div class='available-widgets'></div>"
-                                    +"</div>";
+                                    +"</div></div>";
 
 WidgetAddWidget.prototype.attribs = {};
 
 WidgetAddWidget.prototype.init = function(){
     var contentToAppend = this.layout.replace('@GUID@', this.guid );
-    $(this.target.container).append( contentToAppend );
+    $('.content',this.target.container).append( contentToAppend );
     this.container = $('#'+this.guid);
 
     var plugin = this;
@@ -31,7 +31,7 @@ WidgetAddWidget.prototype.init = function(){
             plugin.target.add( $(evt.target).data('type') );
         });
 
-        $(plugin.container).append(button);
+        $('.available-widgets',plugin.container).append(button);
 
     } );
 
