@@ -41,11 +41,11 @@ WidgetContainer.prototype.init = function(){
     WidgetContainer.prototype.attribs[0] = new BackgroundSelector( this, '#'+this.guid );;
     WidgetContainer.prototype.attribs[0] = new ContainerWrapper( this );
 
-    new WidgetAddWidget( this );
+    new WidgetAddWidget( this, [ 'WidgetEmpty' ] );
 };
 
 WidgetContainer.prototype.add = function( widget ){
-    if (typeof registeredWidgets[ widget ] != 'undefined' && registeredWidgets[ widget ]){
+    if ( typeof window[ widget ] == 'function' ){
         this.widgets.add( new window[ widget ] ( this.container) );
     }
 };
