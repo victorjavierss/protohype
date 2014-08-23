@@ -6,8 +6,9 @@
             new WidgetAddWidget( mainContainer );
 
             $('.overlay').on('click', function(){
-                $('.widget-add').removeClass('clicked');
+                $('.widget-add').removeClass('clicked').removeClass('col-md-4').addClass('col-md-2');
                 $('.overlay').hide();
+                $('.content',$('.widget-add')).removeClass('height-2').addClass('height-1');
             });
 
         });

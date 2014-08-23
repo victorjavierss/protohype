@@ -24,8 +24,10 @@ WidgetAddWidget.prototype.init = function(){
     this.container = $('#'+this.guid);
 
     $('.add-widget', this.container).on('click', function(evt){
-        $('.overlay').css('display','block');
-       $(this.parentNode.parentNode ).addClass('clicked');
+       $('.overlay').css('display','block');
+       $(this.parentNode.parentNode).addClass('clicked');
+       $(this.parentNode.parentNode).removeClass('col-md-2').addClass('col-md-4');
+        $('.content',this.parentNode.parentNode).removeClass('height-1').addClass('height-2');
     });
 
 
@@ -51,8 +53,6 @@ WidgetAddWidget.prototype.init = function(){
                                 +'<i class="fa '+widgetP.icon+'" data-type="'+widget+'">'+widgetP.description+'</button>');
 
                 $(button).on('click', function(evt){
-                    console.log(plugin);
-                    console.log(plugin.target);
                     plugin.target.add( $(evt.target).data('type') );
                 });
 

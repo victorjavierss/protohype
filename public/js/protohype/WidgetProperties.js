@@ -14,9 +14,8 @@ var BackgroundSelector = function( widget, selector){
     this.widget = widget;
     this.guid = guid();
 
-    if( label ){
-        this.label = label
-    }
+    this.label = label?label:this.label
+
     this.target = selector ? selector : widget.target;
     this.init();
 }
