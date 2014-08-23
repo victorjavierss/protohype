@@ -11,7 +11,7 @@ WidgetEmpty.prototype.target = '';
 WidgetEmpty.prototype.container = null;
 WidgetEmpty.prototype.widgets = null;
 
-WidgetEmpty.prototype.layout = "<div id='@GUID@' class='widget col-md-3'>"
+WidgetEmpty.prototype.layout = "<div id='@GUID@' class='widget col-md-3 widget-type-empty'>"
                                     +"<div class='container-config'>"
                                     +"<div class='opener'><i class='fa fa-cogs'></i></div>"
                                     +"<div class='properties-config'></div>"
@@ -21,19 +21,15 @@ WidgetEmpty.prototype.attribs = {};
 
 WidgetEmpty.prototype.init = function(){
     WidgetEmpty.prototype.widgets = new WidgetList();
-    var contentToAppend = this.layout.replace('@GUID@', this.guid );
 
-    $( contentToAppend ).insertBefore( $( '.widget-add', this.target) );
+    var contentToAppend = this.layout.replace('@GUID@', this.guid );
+    $( contentToAppend ).insertBefore( $( this.target.selector + '> .content > .widget-add' ) );
 
     this.container = $('#'+this.guid);
-
     var plugin = this;
-
     $('.opener', this.container).on('click', function(evt){
         $('.properties-config', plugin.container).toggle();
     });
-
-    new BackgroundSelector( this, 'container_background','Background', '#'+this.guid );
-    new ColumnCount( this );
-
+    this.attribs['background'] = new BackgroundSelector( this, 'container_background','Background', '#'+this.guid );
+    this.attribs['columnCount'] = new ColumnCount( this );
 }

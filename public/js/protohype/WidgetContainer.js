@@ -11,7 +11,7 @@ WidgetContainer.prototype.target = '';
 WidgetContainer.prototype.container = null;
 WidgetContainer.prototype.widgets = null;
 
-WidgetContainer.prototype.layout = "<div id='@GUID@' class='height-1 col-md-6'>"
+WidgetContainer.prototype.layout = "<div id='@GUID@' class='height-1 col-md-6 widget-type-container'>"
                                     +"<div class='container-config'>"
                                     +"<div class='opener'><i class='fa fa-cogs'></i></div>"
                                     +"<div class='properties-config'></div>"
@@ -23,7 +23,9 @@ WidgetContainer.prototype.init = function(){
     this.widgets = new WidgetList();
     var contentToAppend = this.layout.replace('@GUID@', this.guid );
 
-    $( contentToAppend ).insertBefore( $( '.widget-add', this.target) );
+
+
+    $( contentToAppend ).insertBefore( $( this.target.selector + '> .content > .widget-add' ) );
 
     this.container = $('#'+this.guid);
 
@@ -35,7 +37,9 @@ WidgetContainer.prototype.init = function(){
 
     WidgetContainer.prototype.attribs[0] = new BackgroundSelector( this, '#'+this.guid );;
     WidgetContainer.prototype.attribs[0] = new ContainerWrapper( this );
-}
+
+    new WidgetAddWidget( this );
+};
 
 WidgetContainer.prototype.add = function( widget ){
     if (typeof registeredWidgets[ widget ] != 'undefined' && registeredWidgets[ widget ]){

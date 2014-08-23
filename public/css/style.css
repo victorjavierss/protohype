@@ -123,17 +123,14 @@ li.dropdown>a:hover, li.dropdown>a:focus, li.dropdown.open>a{background-color: #
     left: auto;
 }
 
+body .main-content{
+    padding-top: 15px;
+}
 
 /* Pages */
 .show-grid [class*="col-"] > div.content {
     border: 1px solid #ddd;
 }
-
-
-div[class*="col-"]{
-    padding: 15px 15px 0 15px;
-}
-
 
 .show-grid .content{
     box-shadow: 0 0 1px;
@@ -141,15 +138,15 @@ div[class*="col-"]{
 }
 
 .height-1{
-    height: 150px;
+    min-height: 150px;
 }
 
 .height-2{
-    height: 300px;
+    min-height: 300px;
 }
 
 .height-3{
-    height: 450px;
+    min-height: 450px;
 }
 
 .websites-container .icon{
@@ -221,12 +218,6 @@ div[class*="col-"]{
 
 .page-editor .widget-add{
     position: relative;
-    z-index: 999;
-    margin: 1em 0;
-    padding: 4px;
-    background: #fcfaf0;
-    border-radius: 1em;
-    font-size: 11px;
     -webkit-transition: .6s cubic-bezier(0,1.5,.5,1);
     -moz-transition: .6s cubic-bezier(0,1.5,.5,1);
     -o-transition: .6s cubic-bezier(0,1.5,.5,1);
@@ -235,7 +226,7 @@ div[class*="col-"]{
 
 .page-editor .widget-add.clicked{
     transform: translate(-50%,-50%);
-    position: absolute;
+    position: fixed;
     z-index: 10000000;
     top: 50%;
     left: 50%;
@@ -280,4 +271,8 @@ div[class*="col-"]{
     filter: blur(20px);
     opacity: 0.4;
     display: none;
+}
+
+.widget-type-container > .content > div{
+    padding:0;
 }
