@@ -8,7 +8,7 @@ WidgetAddWidget.prototype.guid = 0;
 WidgetAddWidget.prototype.target = '';
 WidgetAddWidget.prototype.widgets = null;
 
-WidgetAddWidget.prototype.layout =    "<div id='@GUID@' class='col-md-2 col-sm-2 col-xs-2 widget-add'><div class='height-1 content'>"
+WidgetAddWidget.prototype.layout =    "<div id='@GUID@' class='col-md-2 col-sm-2 widget-add'><div class='height-1 content'>"
                                     + "<div class='add-widget'> <div class='outer-circle'><div class='inner-circle'><span>+</span></div></div> </div>"
                                     + "<div class='available-widgets panel-group'></div>"
                                     + "</div></div>";
@@ -17,10 +17,17 @@ WidgetAddWidget.prototype.attribs = {};
 
 WidgetAddWidget.prototype.init = function(){
     var contentToAppend = this.layout.replace('@GUID@', this.guid );
+    var widget = this;
 
     $('.content', this.target.container).append( contentToAppend );
 
     this.container = $('#'+this.guid);
+
+    $('.add-widget', this.container).on('click', function(evt){
+        $('.overlay').css('display','block');
+       $(this.parentNode.parentNode ).addClass('clicked');
+    });
+
 
     var plugin = this;
 

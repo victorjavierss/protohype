@@ -124,45 +124,6 @@ li.dropdown>a:hover, li.dropdown>a:focus, li.dropdown.open>a{background-color: #
 }
 
 
-
-/* Buttons */
-
-/* ------------------------------- */
-
-.btn-outline {
-    color: inherit;
-    background-color: transparent;
-    transition: all .5s;
-}
-
-.btn-primary.btn-outline {
-    color: #428bca;
-}
-
-.btn-success.btn-outline {
-    color: #5cb85c;
-}
-
-.btn-info.btn-outline {
-    color: #5bc0de;
-}
-
-.btn-warning.btn-outline {
-    color: #f0ad4e;
-}
-
-.btn-danger.btn-outline {
-    color: #d9534f;
-}
-
-.btn-primary.btn-outline:hover,
-.btn-success.btn-outline:hover,
-.btn-info.btn-outline:hover,
-.btn-warning.btn-outline:hover,
-.btn-danger.btn-outline:hover {
-    color: #fff;
-}
-
 /* Pages */
 .show-grid [class*="col-"] > div.content {
     border: 1px solid #ddd;
@@ -170,7 +131,7 @@ li.dropdown>a:hover, li.dropdown>a:focus, li.dropdown.open>a{background-color: #
 
 
 div[class*="col-"]{
-    padding: 15px 15px 0 0;
+    padding: 15px 15px 0 15px;
 }
 
 
@@ -235,8 +196,8 @@ div[class*="col-"]{
     line-height: 30px;
     color: #f8f8f8;
     cursor: pointer;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 44px;
+    padding-bottom: 44px;
 }
 
 .page-editor .widget-add .add-widget .outer-circle{
@@ -257,12 +218,59 @@ div[class*="col-"]{
     font-family: Pacifico, Helvetica Neue, Helvetica, Arial;
 }
 
-.page-editor .widget-add .available-widgets{
+.page-editor .widget-add{
+    position: relative;
+    z-index: 999;
+    margin: 1em 0;
+    padding: 4px;
+    background: #fcfaf0;
+    border-radius: 1em;
+    font-size: 11px;
+    -webkit-transition: .6s cubic-bezier(0,1.5,.5,1);
+    -moz-transition: .6s cubic-bezier(0,1.5,.5,1);
+    -o-transition: .6s cubic-bezier(0,1.5,.5,1);
+    transition: .6s cubic-bezier(0,1.5,.5,1);
+}
+
+.page-editor .widget-add.clicked{
+    transform: translate(500px,250px);
+    position: absolute;
+    z-index: 10000000;
+}
+
+.page-editor .widget-add .available-widgets,
+.page-editor .widget-add.clicked .add-widget{
     display: none;
+}
+.page-editor .widget-add.clicked .available-widgets{
+    display: block;
 }
 
 .page-editor .widget-add .content{
     border: 2px dashed #6a8789;
     border-radius: 3px;
     background-color: rgba(255,255,255,0.7);
+    overflow-y: auto;
+}
+
+.panel-title{
+    color: #6a8789;
+    font-size: 14px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255, 0.5);
+    z-index: 100000;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
+    opacity: 0.4;
+    display: none;
 }

@@ -7,14 +7,11 @@ var guid = (function() {
     };
 })();
 
-var registeredWidgets = { 'Basic': ['WidgetContainer','WidgetEmpty']
-                          ,'Advanced': ['WidgetContainer','WidgetEmpty']
-                            };
+var registeredWidgets = { 'Basic': ['WidgetContainer','WidgetEmpty'] };
 
 
 var BackgroundSelector = function( widget, selector){
     this.widget = widget;
-    this.attrib = attrib;
     this.guid = guid();
 
     if( label ){
@@ -81,14 +78,19 @@ ContainerWrapper.prototype.init = function() {
     });
 };
 
-var ColumnCount = function( widget ){
+var ColumnCount = function( widget, min, max ){
     this.widget = widget;
     this.init();
-}
+    this.min = min ? min : 2;
+    this.max = max ? max : 12;
+};
 
 ColumnCount.prototype.widget = null;
 ColumnCount.prototype.value = null;
+ColumnCount.prototype.min = null;
+ColumnCount.prototype.max = null;
 ColumnCount.prototype.label = '# Columns';
+
 ColumnCount.prototype.init = function() {
     var widget = this.widget;
     var property = this;
