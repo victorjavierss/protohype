@@ -5,7 +5,7 @@ var WidgetEmpty = function( target ){
 }
 
 WidgetEmpty.prototype.guid = 0;
-WidgetEmpty.prototype.description = 'Empty Widget';
+WidgetEmpty.prototype.description = 'Empty Container';
 WidgetEmpty.prototype.icon = 'fa-th';
 WidgetEmpty.prototype.target = '';
 WidgetEmpty.prototype.container = null;

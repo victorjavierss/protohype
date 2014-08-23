@@ -7,10 +7,10 @@ var guid = (function() {
     };
 })();
 
-var registeredWidgets = { 'Basic': ['WidgetContainer','WidgetEmpty'] };
+var registeredWidgets = ['WidgetContainer','WidgetEmpty'];
 
 
-var BackgroundSelector = function( widget, selector){
+var BackgroundSelector = function( widget, selector, label){
     this.widget = widget;
     this.guid = guid();
 
