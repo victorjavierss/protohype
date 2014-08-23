@@ -13,9 +13,13 @@ WidgetEmpty.prototype.widgets = null;
 
 WidgetEmpty.prototype.layout = "<div id='@GUID@' class='widget col-md-3'>"
                                     +"<div class='container-config'>"
-                                    +"<div class='opener'><i class='fa fa-cogs'></i></div>"
-                                    +"<div class='properties-config'></div>"
-                                    +"</div><div class='content height-1'></div>";
+                                    +"<div class='opener'><i class='fa fa-cog'></i></div>"
+                                    +"<div class='delete'><i class='fa fa-trash-o'></i></div>"
+                                    +"<div class='properties-config bubble'></div>"
+                                    //+"<div class='properties-config'></div>"
+                                    +"</div>"
+                                    +"<div class='content height-1'></div>"
+                                    +"</div>";
 
 WidgetEmpty.prototype.attribs = {};
 
@@ -30,7 +34,7 @@ WidgetEmpty.prototype.init = function(){
     var plugin = this;
 
     $('.opener', this.container).on('click', function(evt){
-        $('.properties-config', plugin.container).toggle();
+        $('.properties-config, .arrow-up', plugin.container).toggle();
     });
 
     new BackgroundSelector( this, 'container_background','Background', '#'+this.guid );
