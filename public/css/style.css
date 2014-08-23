@@ -163,13 +163,13 @@ div[class*="col-"]{
     padding: 0 15px;
 }
 
-.page-editor .main-container .container-config{
+.page-editor .container-config{
     position: absolute;
     top: 0;
     right: 0;
 }
 
-.page-editor .main-container .container-config .properties-config{
+.page-editor .container-config .properties-config{
     width: 262px;
     background: #FFF;
     display: none;
@@ -181,14 +181,14 @@ div[class*="col-"]{
     z-index: 1000;
 }
 
-.page-editor .main-container .container-config .opener{
+.page-editor .container-config .opener{
     padding: 5px;
     cursor: pointer;
     float: right;
-    background-color: #E8466D;
+    /*background-color: #E8466D;*/
 }
 
-.page-editor .main-container .container-config .opener:hover{
+.page-editor .container-config .opener:hover{
     text-shadow: 0 0 2px;
 }
 

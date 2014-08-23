@@ -10,11 +10,11 @@ var guid = (function() {
 var registeredWidgets = { 'Basic': ['WidgetContainer','WidgetEmpty'] };
 
 
-var BackgroundSelector = function( widget, selector){
+var BackgroundSelector = function( widget, selector, label){
     this.widget = widget;
     this.guid = guid();
 
-    this.label = label?label:this.label
+    this.label = label ? label : this.label
 
     this.target = selector ? selector : widget.target;
     this.init();
