@@ -177,7 +177,6 @@ body .main-content{
     left: 15px;
     right: 15px;
     background-color: #E8466D;
-    z-index: 1;
 }
 
 .page-editor div[class*="widget-type-"] > .content{
