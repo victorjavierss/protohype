@@ -2,6 +2,106 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57619e1c-e43a-4d5d-b3ec-f8fc30813a76" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/images/arrow.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/images/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/images/hidpi/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/icons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/icons_hidpi.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/images/lock-open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/images/hidpi/lock-open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/images/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/images/hidpi/lock.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/images/refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/images/hidpi/refresh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/af.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/ar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/bg.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/bn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/bs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/ckeditor.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/contents.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/cs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/cy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/da.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/de.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/dialog.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/dialog_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/dialog_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/dialog_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/dialog_iequirks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/editor.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/editor_gecko.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/editor_ie.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/editor_ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/editor_ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/editor_iequirks.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/el.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/en-au.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/en-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/en-gb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/en.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/eo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/es.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/et.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/eu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/fa.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/fi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/fo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/fr-ca.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/fr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/gl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/gu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/he.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/hi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/hr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/hu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/id.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/is.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/it.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/ja.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/ka.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/km.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/ko.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/ku.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/lt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/lv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/mk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/mn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/ms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/nb.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/nl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/no.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/pl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/pt-br.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/pt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/skins/moono/readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/ro.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/ru.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/si.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/sk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/sl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/sq.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/sr-latn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/sr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/styles.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/sv.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/th.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/tr.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/tt.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/ug.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/uk.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/vi.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/zh-cn.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/vendor/ckeditor/lang/zh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/protohype/WidgetAddWidget.js" afterPath="$PROJECT_DIR$/public/js/protohype/WidgetAddWidget.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/protohype/WidgetContainer.js" afterPath="$PROJECT_DIR$/public/js/protohype/WidgetContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/protohype/WidgetEmpty.js" afterPath="$PROJECT_DIR$/public/js/protohype/WidgetEmpty.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/protohype/WidgetHTML.js" afterPath="$PROJECT_DIR$/public/js/protohype/WidgetHTML.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/protohype/WidgetProperties.js" afterPath="$PROJECT_DIR$/public/js/protohype/WidgetProperties.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Editor/view/layout/editor.phtml" afterPath="$PROJECT_DIR$/module/Editor/view/layout/editor.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="protohype.iws" />
@@ -38,7 +138,16 @@
       <file leaf-file-name="WidgetAddWidget.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetAddWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="8" selection-start="2898" selection-end="2898" vertical-scroll-proportion="0.0" vertical-offset="422" max-vertical-offset="1080">
+            <state line="64" column="0" selection-start="2946" selection-end="2946" vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="1080">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WidgetEmpty.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetEmpty.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="21" selection-start="1723" selection-end="1723" vertical-scroll-proportion="-18.538462" vertical-offset="118" max-vertical-offset="855">
               <folding />
             </state>
           </provider>
@@ -47,7 +156,7 @@
       <file leaf-file-name="editor.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/Editor/view/layout/editor.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="34" selection-start="983" selection-end="983" vertical-scroll-proportion="-6.875" vertical-offset="150" max-vertical-offset="1245">
+            <state line="24" column="34" selection-start="1176" selection-end="1176" vertical-scroll-proportion="-6.875" vertical-offset="195" max-vertical-offset="1305">
               <folding />
             </state>
           </provider>
@@ -65,25 +174,59 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="17" selection-start="1492" selection-end="1492" vertical-scroll-proportion="-6.3461537" vertical-offset="1095" max-vertical-offset="5250">
-              <folding />
+            <state line="92" column="17" selection-start="1646" selection-end="1646" vertical-scroll-proportion="-6.3461537" vertical-offset="1215" max-vertical-offset="5505">
+              <folding>
+                <marker date="1408901643000" expanded="true" signature="2712:2789" placeholder="{...}" />
+                <marker date="1408901643000" expanded="true" signature="4077:4206" placeholder="{...}" />
+                <marker date="1408901643000" expanded="true" signature="4258:4380" placeholder="{...}" />
+                <marker date="1408901643000" expanded="true" signature="4508:4712" placeholder="{...}" />
+                <marker date="1408901643000" expanded="true" signature="4738:4859" placeholder="{...}" />
+                <marker date="1408901643000" expanded="true" signature="4893:5030" placeholder="{...}" />
+                <marker date="1408901643000" expanded="true" signature="5091:5124" placeholder="{...}" />
+                <marker date="1408901643000" expanded="true" signature="5205:5218" placeholder="{...}" />
+                <marker date="1408901643000" expanded="true" signature="5334:5356" placeholder="{...}" />
+                <marker date="1408901643000" expanded="true" signature="5403:5434" placeholder="{...}" />
+                <marker date="1408901643000" expanded="true" signature="5502:5761" placeholder="{...}" />
+                <marker date="1408901643000" expanded="true" signature="5836:5851" placeholder="{...}" />
+                <marker date="1408901643000" expanded="true" signature="6041:6237" placeholder="{...}" />
+                <marker date="1408901643000" expanded="true" signature="6282:6476" placeholder="{...}" />
+                <marker date="1408901643000" expanded="true" signature="6522:6682" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WidgetProperties.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="WidgetProperties.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetProperties.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="81" selection-start="3563" selection-end="3563" vertical-scroll-proportion="0.6914557" vertical-offset="1018" max-vertical-offset="1650">
+            <state line="100" column="49" selection-start="3621" selection-end="3621" vertical-scroll-proportion="-16.807692" vertical-offset="1063" max-vertical-offset="1695">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WidgetContainer.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="WidgetContainer.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="100" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="1020">
+            <state line="23" column="0" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.31170887" vertical-offset="148" max-vertical-offset="1110">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WidgetMainContainer.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetMainContainer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="24" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WidgetLikedList.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetLikedList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="119" column="27" selection-start="2826" selection-end="2826" vertical-scroll-proportion="0.0" vertical-offset="1245" max-vertical-offset="2850">
               <folding />
             </state>
           </provider>
@@ -108,7 +251,6 @@
         <option value="$PROJECT_DIR$/module/Application/view/application/index/index.phtml" />
         <option value="$PROJECT_DIR$/ExperienceBuilderCC.xml" />
         <option value="$PROJECT_DIR$/module/Application/src/Protohype/Widget/Container.php" />
-        <option value="$PROJECT_DIR$/public/js/protohype/WidgetLikedList.js" />
         <option value="$PROJECT_DIR$/module/Application/src/Protohype/Widget/Base.php" />
         <option value="$PROJECT_DIR$/module/Application/src/Protohype/Widget/Html.php" />
         <option value="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
@@ -147,14 +289,15 @@
         <option value="$PROJECT_DIR$/public/js/vendor/jquery.simplecolorpicker.js" />
         <option value="$PROJECT_DIR$/public/css/vendor/simplecolorpicker.css" />
         <option value="$PROJECT_DIR$/config/application.config.php" />
-        <option value="$PROJECT_DIR$/public/js/protohype/WidgetEmpty.js" />
-        <option value="$PROJECT_DIR$/public/js/protohype/WidgetMainContainer.js" />
         <option value="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/module/Editor/view/editor/editor/index.phtml" />
         <option value="$PROJECT_DIR$/public/js/protohype/WidgetAddWidget.js" />
         <option value="$PROJECT_DIR$/module/Editor/view/layout/editor.phtml" />
         <option value="$PROJECT_DIR$/public/js/protohype/WidgetProperties.js" />
+        <option value="$PROJECT_DIR$/public/js/protohype/WidgetMainContainer.js" />
+        <option value="$PROJECT_DIR$/public/js/protohype/WidgetEmpty.js" />
+        <option value="$PROJECT_DIR$/public/js/protohype/WidgetLikedList.js" />
         <option value="$PROJECT_DIR$/public/js/protohype/WidgetContainer.js" />
       </list>
     </option>
@@ -401,10 +544,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1439" y="22" width="1920" height="1058" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28985506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28985506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -666,13 +809,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetLikedList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="10" selection-start="1499" selection-end="1509" vertical-scroll-proportion="0.4606526" vertical-offset="750" max-vertical-offset="2685">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="8908" selection-start="9046" selection-end="9056" vertical-scroll-proportion="0.186722" vertical-offset="0" max-vertical-offset="482">
@@ -701,20 +837,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetEmpty.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.612462" vertical-offset="2" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetMainContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="2" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.7066869" vertical-offset="0" max-vertical-offset="658">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="105" selection-start="2096" selection-end="2096" vertical-scroll-proportion="-10.791667" vertical-offset="341" max-vertical-offset="1125">
@@ -724,8 +846,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="17" selection-start="1492" selection-end="1492" vertical-scroll-proportion="-6.3461537" vertical-offset="1095" max-vertical-offset="5250">
-          <folding />
+        <state line="92" column="17" selection-start="1646" selection-end="1646" vertical-scroll-proportion="-6.3461537" vertical-offset="1215" max-vertical-offset="5505">
+          <folding>
+            <marker date="1408901643000" expanded="true" signature="2712:2789" placeholder="{...}" />
+            <marker date="1408901643000" expanded="true" signature="4077:4206" placeholder="{...}" />
+            <marker date="1408901643000" expanded="true" signature="4258:4380" placeholder="{...}" />
+            <marker date="1408901643000" expanded="true" signature="4508:4712" placeholder="{...}" />
+            <marker date="1408901643000" expanded="true" signature="4738:4859" placeholder="{...}" />
+            <marker date="1408901643000" expanded="true" signature="4893:5030" placeholder="{...}" />
+            <marker date="1408901643000" expanded="true" signature="5091:5124" placeholder="{...}" />
+            <marker date="1408901643000" expanded="true" signature="5205:5218" placeholder="{...}" />
+            <marker date="1408901643000" expanded="true" signature="5334:5356" placeholder="{...}" />
+            <marker date="1408901643000" expanded="true" signature="5403:5434" placeholder="{...}" />
+            <marker date="1408901643000" expanded="true" signature="5502:5761" placeholder="{...}" />
+            <marker date="1408901643000" expanded="true" signature="5836:5851" placeholder="{...}" />
+            <marker date="1408901643000" expanded="true" signature="6041:6237" placeholder="{...}" />
+            <marker date="1408901643000" expanded="true" signature="6282:6476" placeholder="{...}" />
+            <marker date="1408901643000" expanded="true" signature="6522:6682" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -738,28 +876,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Editor/view/layout/editor.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="34" selection-start="983" selection-end="983" vertical-scroll-proportion="-6.875" vertical-offset="150" max-vertical-offset="1245">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetAddWidget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="8" selection-start="2898" selection-end="2898" vertical-scroll-proportion="0.0" vertical-offset="407" max-vertical-offset="1080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="100" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="1020">
+        <state line="24" column="34" selection-start="1176" selection-end="1176" vertical-scroll-proportion="-6.875" vertical-offset="195" max-vertical-offset="1305">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetProperties.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="81" selection-start="3563" selection-end="3563" vertical-scroll-proportion="0.6914557" vertical-offset="1018" max-vertical-offset="1650">
+        <state line="100" column="49" selection-start="3621" selection-end="3621" vertical-scroll-proportion="-16.807692" vertical-offset="1063" max-vertical-offset="1695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetAddWidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="0" selection-start="2946" selection-end="2946" vertical-scroll-proportion="0.0" vertical-offset="437" max-vertical-offset="1080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetEmpty.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="21" selection-start="1723" selection-end="1723" vertical-scroll-proportion="-18.538462" vertical-offset="118" max-vertical-offset="855">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetMainContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="24" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetLikedList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="27" selection-start="2826" selection-end="2826" vertical-scroll-proportion="0.0" vertical-offset="1245" max-vertical-offset="2850">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="1028" selection-end="1028" vertical-scroll-proportion="0.31170887" vertical-offset="148" max-vertical-offset="1110">
           <folding />
         </state>
       </provider>

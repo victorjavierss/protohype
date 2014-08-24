@@ -26,13 +26,26 @@ WidgetEmpty.prototype.init = function(){
     WidgetEmpty.prototype.widgets = new WidgetList();
 
     var contentToAppend = this.layout.replace('@GUID@', this.guid );
-    $( contentToAppend ).insertBefore( $( this.target.selector + '> .content > .widget-add' ) );
+    $( contentToAppend ).insertBefore( $( this.target.container.selector + '> .content > .widget-add' ) );
 
     this.container = $('#'+this.guid);
     var plugin = this;
     $('.opener', this.container).on('click', function(evt){
         $('.properties-config, .arrow-up', plugin.container).toggle();
     });
+
+    $('.delete', this.container).on('click', function(evt){
+        $(plugin.container).addClass('deleting');
+        bootbox.confirm(protohypeMessages.confirmDelete, function(resp){
+            $(plugin.container).removeClass('deleting');
+            if(resp){
+                $(plugin.container).remove();
+                plugin.target.remove(plugin);
+            }
+        });
+    });
+
+
     this.attribs['background'] = new BackgroundSelector( this, 'container_background','Background', '#'+this.guid );
     this.attribs['columnCount'] = new ColumnCount( this );
     this.attribs['columnCount'].value = 3;
