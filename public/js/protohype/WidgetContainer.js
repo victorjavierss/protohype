@@ -54,7 +54,7 @@ WidgetContainer.prototype.init = function(){
 
     });
 
-    new WidgetAddWidget( this, {Web:{widgets:['WidgetEmpty'], open:true}, Video:{widgets:['WidgetEmpty']},Slider:{widgets:['WidgetEmpty']},Forms:{widgets:['WidgetEmpty']} }  );
+    new WidgetAddWidget( this, {Web:{widgets:['WidgetEmpty','WidgetHTML'], open:true}, Video:{widgets:['WidgetEmpty']},Slider:{widgets:['WidgetEmpty']},Forms:{widgets:['WidgetEmpty']} }  );
 };
 
 WidgetContainer.prototype.add = function( widget ){

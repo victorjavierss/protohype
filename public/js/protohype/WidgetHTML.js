@@ -29,7 +29,7 @@ WidgetHTML.prototype.init = function(){
     this.widgets = new WidgetList();
 
     var contentToAppend = this.layout.replace(/\@GUID\@/g, this.guid );
-    $( contentToAppend ).insertBefore( $( this.target.selector + '> .content > .widget-add' ) );
+    $( contentToAppend ).insertBefore( $( this.target.container.selector + '> .content > .widget-add' ) );
 
     this.container = $('#'+this.guid);
     var plugin = this;
