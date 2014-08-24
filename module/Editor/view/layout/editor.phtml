@@ -14,7 +14,7 @@
     <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
         ->prependStylesheet($this->basePath() . '/css/style.css')
         ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css')
-        ->prependStylesheet('//fonts.googleapis.com/css?family=Pacifico|Roboto')
+        ->prependStylesheet('//fonts.googleapis.com/css?family=Pacifico|Roboto+Condensed')
         ->prependStylesheet($this->basePath() . '/css/vendor/simplecolorpicker.css')
         ->prependStylesheet( '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css')?>
 
@@ -27,6 +27,7 @@
         ->prependFile($this->basePath() . '/js/protohype/WidgetMainContainer.js')
         ->prependFile($this->basePath() . '/js/protohype/WidgetProperties.js')
         ->prependFile($this->basePath() . '/js/protohype/WidgetLikedList.js')
+        ->prependFile($this->basePath() . '/js/protohype/WidgetDummies.js')
         ->prependFile($this->basePath() . '/js/protohype/WidgetAddWidget.js')
         ->prependFile($this->basePath() . '/js/vendor/ckeditor/config.js')
         ->prependFile($this->basePath() . '/js/vendor/ckeditor/ckeditor.js')

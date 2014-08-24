@@ -11,7 +11,7 @@ WidgetEmpty.prototype.target = '';
 WidgetEmpty.prototype.container = null;
 WidgetEmpty.prototype.widgets = null;
 
-WidgetEmpty.prototype.layout = "<div id='@GUID@' class='widget col-md-3 widget-type-empty'>"
+WidgetEmpty.prototype.layout = "<div id='@GUID@' class='widget widget-type-empty'>"
                                     +"<div class='container-config'>"
                                     +"<div class='opener'><i class='fa fa-cog'></i></div>"
                                     +"<div class='delete'><i class='fa fa-trash-o'></i></div>"
@@ -47,6 +47,5 @@ WidgetEmpty.prototype.init = function(){
 
 
     this.attribs['background'] = new BackgroundSelector( this, 'container_background','Background', '#'+this.guid );
-    this.attribs['columnCount'] = new ColumnCount( this );
-    this.attribs['columnCount'].value = 3;
+    this.attribs['columnCount'] = new ColumnCount( this, 3 );
 }

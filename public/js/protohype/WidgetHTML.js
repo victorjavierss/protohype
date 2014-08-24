@@ -5,7 +5,7 @@ var WidgetHTML = function( target ){
 }
 
 WidgetHTML.prototype.guid = 0;
-WidgetHTML.prototype.description = 'HTML Widget';
+WidgetHTML.prototype.description = 'HTML';
 WidgetHTML.prototype.icon = 'fa-pencil-square-o';
 WidgetHTML.prototype.target = '';
 WidgetHTML.prototype.container = null;

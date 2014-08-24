@@ -5,7 +5,7 @@
             mainContainer = new WidgetMainContainer('body');
             new WidgetAddWidget( mainContainer, {Web:{widgets:['WidgetContainer'], open:true}} );
             $('.overlay').on('click', function(){
-                $('.widget-add').removeClass('clicked').removeClass('col-md-4').addClass('col-md-2');
+                $('.widget-add').removeClass('clicked').removeClass('col-md-3').addClass('col-md-2');
                 $('.overlay').hide();
                 $('.content',$('.widget-add')).removeClass('height-2').addClass('height-1');
             });
