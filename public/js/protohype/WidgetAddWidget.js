@@ -11,13 +11,13 @@ WidgetAddWidget.prototype.widgets = null;
 WidgetAddWidget.prototype.registeredWidgets = {};
 WidgetAddWidget.prototype.layout =    "<div id='@GUID@' class='col-md-2 col-sm-2 widget-add'><div class='height-1 content'>"
                                     + "<div class='add-widget'> <div class='outer-circle'><div class='inner-circle'><span>+</span></div></div> </div>"
-                                    + "<div class='available-widgets'></div>"
+                                    + "<div id='@GUID@-accordion' class='available-widgets panel-group'></div>"
                                     + "</div></div>";
 
 WidgetAddWidget.prototype.attribs = {};
 
 WidgetAddWidget.prototype.init = function(){
-    var contentToAppend = this.layout.replace('@GUID@', this.guid );
+    var contentToAppend = this.layout.replace(/\@GUID\@/g, this.guid );
     var widget = this;
 
     $('.content', this.target.container).append( contentToAppend );
@@ -39,7 +39,7 @@ WidgetAddWidget.prototype.init = function(){
         var panel =   '<div class="panel panel-default">'
             + '<div class="panel-heading">'
             + '<h5 class="panel-title">'
-            + '<a data-toggle="collapse" data-parent="#accordion" href="#'+collapseGUID+'">'+widgetCategory+'</a>'
+            + '<a data-toggle="collapse" data-parent="#'+plugin.guid+'-accordion" href="#'+collapseGUID+'">'+widgetCategory+'</a>'
             + '</h5></div><div id="'+collapseGUID+'" class="panel-collapse collapse '+open+'">' +
             ' <div class="panel-body"></div></div></div>';
 
@@ -54,6 +54,7 @@ WidgetAddWidget.prototype.init = function(){
 
                 $(button).on('click', function(evt){
                     plugin.target.add( $(evt.target).data('type') );
+                    $('.overlay').trigger('click')
                 });
 
                 $('.available-widgets #'+collapseGUID+' .panel-body',plugin.container).append(button);

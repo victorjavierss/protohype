@@ -26,8 +26,6 @@ WidgetContainer.prototype.init = function(){
     this.widgets = new WidgetList();
     var contentToAppend = this.layout.replace('@GUID@', this.guid );
 
-
-
     $( contentToAppend ).insertBefore( $( this.target.selector + '> .content > .widget-add' ) );
 
     this.container = $('#'+this.guid);
@@ -43,7 +41,19 @@ WidgetContainer.prototype.init = function(){
     WidgetContainer.prototype.attribs['column'] = new ColumnCount( this, 3, 12 );
     WidgetContainer.prototype.attribs['column'].value = 6;
 
-    new WidgetAddWidget( this, {Basic:{widgets:['WidgetEmpty'], open:true}}  );
+    $('.delete', this.container).on('click', function(evt){
+        $(plugin).addClass('deleting');
+        bootbox.confirm(protohypeMessages.confirmDelete, function(resp){
+            $(plugin.container).removeClass('deleting');
+            if(resp){
+                console.log(plugin.target);
+               // $(plugin.container).remove();
+            }
+        });
+
+    });
+
+    new WidgetAddWidget( this, {Web:{widgets:['WidgetEmpty'], open:true}, Video:{widgets:['WidgetEmpty']},Slider:{widgets:['WidgetEmpty']},Forms:{widgets:['WidgetEmpty']} }  );
 };
 
 WidgetContainer.prototype.add = function( widget ){

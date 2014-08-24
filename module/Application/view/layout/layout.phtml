@@ -38,8 +38,8 @@
                     <!-- /.dropdown -->
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <span class="user-info"><?php echo $this->layout()->identity->name; ?></span>
                             <?php echo $this->gravatar($this->identity->email, array('class'=>"nav-user-photo"),  array('class'=>"nav-user-photo"))?>
-                            <span class="user-info"><?php echo $this->layout()->identity->name; ?></span> <i class="fa fa-caret-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-user">
                             <li><a href="#"><i class="fa fa-user fa-fw"></i> Profile</a>
