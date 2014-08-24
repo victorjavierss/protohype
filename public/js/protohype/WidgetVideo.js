@@ -1,47 +1,68 @@
-var WidgetContainer = function( target ){
+var WidgetVideo = function( target ){
     this.guid = guid();
     this.target = target;
     this.init();
 }
 
-WidgetContainer.prototype.guid = 0;
-WidgetContainer.prototype.target = '';
-WidgetContainer.prototype.container = null;
-WidgetContainer.prototype.widgets = null;
+WidgetVideo.prototype.guid = 0;
+WidgetVideo.prototype.description = 'HTML Widget';
+WidgetVideo.prototype.icon = 'fa-pencil-square-o';
+WidgetVideo.prototype.target = '';
+WidgetVideo.prototype.container = null;
+WidgetVideo.prototype.widgets = null;
 
-WidgetContainer.prototype.layout = "<div id='@GUID@' class='main-container show-grid clearfix'>"
+WidgetVideo.prototype.layout = "<div id='@GUID@' class='widget col-md-4 widget-type-html'>"
                                     +"<div class='container-config'>"
-                                    +"<div class='opener'><i class='fa fa-cogs'></i></div>"
-                                    +"<div class='properties-config'></div>"
+                                    +"<div class='opener'><i class='fa fa-cog'></i></div>"
+                                    +"<div class='delete'><i class='fa fa-trash-o'></i></div>"
+                                    +"<div class='properties-config bubble'></div>"
+                                    +"</div>"
+                                    +"<div class='content height-1'>"
+                                    +"<textarea name='@GUID@-editor' id='@GUID@-editor'></textarea>"
+                                    +"</div>"
                                     +"</div>";
 
-WidgetContainer.prototype.attribs = {
-    container_background : "#f8f8f8",
-    site_background : "#f8f8f8",
-    hasWrapper : false
-};
+WidgetVideo.prototype.attribs = {};
 
-WidgetContainer.prototype.init = function(){
-    WidgetContainer.prototype.widgets = new WidgetList();
-    var contentToAppend = this.layout.replace('@GUID@', this.guid );
-    $(this.target).append( contentToAppend );
+WidgetVideo.prototype.init = function(){
+    this.widgets = new WidgetList();
+
+    var contentToAppend = this.layout.replace(/\@GUID\@/g, this.guid );
+    $( contentToAppend ).insertBefore( $( this.target.container.selector + '> .content > .widget-add' ) );
 
     this.container = $('#'+this.guid);
-
     var plugin = this;
-
     $('.opener', this.container).on('click', function(evt){
-        $('#'+plugin.guid+' > .container-config .properties-config').toggle();
+        $('.properties-config', plugin.container).toggle();
     });
+    
+    this.attribs['columnCount'] = new ColumnCount( this, 4 );
 
-    new BackgroundSelector( this, 'site_background', 'Site Background' );
-    new BackgroundSelector( this, 'container_background','Container Background', '#'+this.guid );
-    new ContainerWrapper( this );
 }
 
-WidgetContainer.prototype.add = function( widget ){
+WidgetVideo.prototype.getVideos = function(){
+    $.ajax({
+        type: "GET",
+        data: {
+            "path":"assets",
+            "method": 'GET'
+        },
+        url: "php/functions.php",
+        success: function (data) {
+            addVideosToList(data);
+        },
+        error: function (data) {
+            alert("e " + data);
+        }
+    });
+}
 
-    if (typeof registeredWidgets[ widget ] != 'undefined' && registeredWidgets[ widget ]){
-        this.widgets.add( new window[ widget ] ( this.container) );
-    }
-};
+WidgetVideo.prototype.addVideosToList = function(){
+    var video_data = jQuery.parseJSON(data);        
+    $.each(video_data.items, function(i,video) {                
+       $("#video_collection").append('<div class="video_list_item">' +
+            '<img src="' + (video.preview_image_url==null?'http://heicard.com.vn/Content/images/DefaultThumbnail.gif':video.preview_image_url) + '" alt="image" class="thumb_image"/>' +                            
+            '<div class="video_title">'+ video.name + '</div>' +
+            '</div>');
+        }); 
+}
