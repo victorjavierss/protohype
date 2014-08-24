@@ -43,7 +43,7 @@ WidgetContainer.prototype.init = function(){
     WidgetContainer.prototype.attribs['column'] = new ColumnCount( this, 3, 12 );
     WidgetContainer.prototype.attribs['column'].value = 6;
 
-    new WidgetAddWidget( this, {Basic:{widgets:['WidgetEmpty'], open:true}}  );
+    new WidgetAddWidget( this, {Basic:{widgets:['WidgetEmpty','WidgetHTML'], open:true}}  );
 };
 
 WidgetContainer.prototype.add = function( widget ){

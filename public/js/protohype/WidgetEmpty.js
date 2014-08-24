@@ -31,10 +31,7 @@ WidgetEmpty.prototype.init = function(){
     this.container = $('#'+this.guid);
     var plugin = this;
     $('.opener', this.container).on('click', function(evt){
-        $('#'+plugin.guid + ' .properties-config:visible').css('z-index',1);
         $('.properties-config, .arrow-up', plugin.container).toggle();
-        $('#'+plugin.guid + ' .properties-config:visible').css('z-index',100);
-        
     });
     this.attribs['background'] = new BackgroundSelector( this, 'container_background','Background', '#'+this.guid );
     this.attribs['columnCount'] = new ColumnCount( this );

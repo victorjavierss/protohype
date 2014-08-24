@@ -7,8 +7,6 @@ var guid = (function() {
     };
 })();
 
-var registeredWidgets = ['WidgetContainer','WidgetEmpty'];
-
 var BackgroundSelector = function( widget, selector, label){
     this.widget = widget;
     this.guid = guid();
@@ -75,15 +73,17 @@ ContainerWrapper.prototype.init = function() {
     });
 };
 
-var ColumnCount = function( widget, min, max ){
+var ColumnCount = function( widget, initial, min, max ){
     this.widget = widget;
     this.init();
+    this.initial = initial ? initial : 3;
     this.min = min ? min : 2;
     this.max = max ? max : 12;
 };
 
 ColumnCount.prototype.widget = null;
 ColumnCount.prototype.value = null;
+ColumnCount.prototype.initial = null;
 ColumnCount.prototype.min = null;
 ColumnCount.prototype.max = null;
 ColumnCount.prototype.label = '# Columns';
@@ -93,7 +93,7 @@ ColumnCount.prototype.init = function() {
     var property = this;
     var propertyDiv = $("<div class='widget-property'></div>");
     propertyDiv.append( this.label );
-    propertyDiv.append( $("<input type='range' id='"+widget.guid+"-column-count' min='2' max='12' value='3' />") );
+    propertyDiv.append( $("<input type='range' id='"+widget.guid+"-column-count' min='"+widget.min+"' max='"+widget.max+"' value='"+widget.initial+"' />") );
     $('.properties-config', widget.container).append(propertyDiv);
     $('#'+widget.guid+'-column-count').on('change', function(evt){
         $(widget.container).removeClass('col-md-' + property.value );

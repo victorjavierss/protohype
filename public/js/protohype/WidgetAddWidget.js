@@ -44,7 +44,7 @@ WidgetAddWidget.prototype.init = function(){
             ' <div class="panel-body"></div></div></div>';
 
         $('.available-widgets',plugin.container).append(panel);
-
+console.log(plugin.container, options.widgets )
         $.each(options.widgets, function(index, widget){
             if( typeof window[widget] != 'undefined' ){
                 var widgetP = window[widget].prototype;

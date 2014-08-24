@@ -199,6 +199,15 @@ body .main-content{
     color:white;
 }
 
+.page-editor .container-config .editor{
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;   
+    float: left;
+    font-size: 20px;
+    color:white;
+}
+
 .page-editor .container-config .opener:hover{
     /*text-shadow: 0 0 2px;*/
 }
@@ -287,9 +296,6 @@ body .main-content{
     display: none;
 }
 
-.widget-type-container > .content > div{
-    padding:0;
-}
 
 /* .properties-config Bubble */
 
@@ -298,7 +304,7 @@ body .main-content{
     width: 250px;
     height: 173px;
     padding: 0px;
-    background: #e6e6e6;
+    background: #fff;
     border: #7a7a7a solid 1px;
     -webkit-box-shadow: 0px 0px 14px 0px rgba(97, 97, 97, 0.5);
     -moz-box-shadow: 0px 0px 14px 0px rgba(97, 97, 97, 0.5);
@@ -312,7 +318,7 @@ body .main-content{
     left: 4px;
     border-style: solid;
     border-width: 0 14px 13px;
-    border-color: #e6e6e6 transparent;
+    border-color: #fff transparent;
     display: block;
     width: 0;
     z-index: 1;
@@ -330,3 +336,15 @@ body .main-content{
     width: 0;
     z-index: 0;
   }
+
+
+  /* CKEDITOR */
+
+  .cke_chrome .cke_bottom{visibility: hidden;}
+
+  .cke_bottom {padding: 3px 3px 0px !important;}
+
+  .cke_toolgroup {margin: 0 6px 2px 0 !important;}
+
+  a.cke_button {height: 16px !important;}
+
