@@ -44,8 +44,7 @@ body {
 }
 
 .nav{
-    background: #42AEB7;
-    padding: 19px 0;
+    padding: 14px 0;
 }
 
 .arrow-right {
@@ -61,25 +60,37 @@ body {
 /* Navigation */
 
 /* ------------------------------- */
-
 .navbar{background: #4CC9CC;}
 
-li.dropdown>a{background-color: #42AEB7;color:#FFF;}
-li.dropdown>a:hover, li.dropdown>a:focus, li.dropdown.open>a{background-color: #42AEB7;color:#FFF;}
+li.dropdown>a{color:#FFF;}
 
+li.dropdown>a:hover,
+li.dropdown>a:focus,
+li.dropdown.open>a{
+    color:#FFF;
+}
 
-.nav>li>a>img.nav-user-photo {margin: -4px 8px 0 0;border-radius: 100%;border: 2px solid #FFF;max-width: 40px;position: absolute;top: 9px;left: 5px;}
-.nav>li>a>span.user-info{padding-left: 35px;}
+.nav>li>a:focus,
+.nav>li>a:hover,
+.nav .open>a:hover,
+.nav .open>a,
+.nav .open>a:focus{
+    background-color:#42AEB7;
+}
+
+.nav>li>a>img.nav-user-photo {
+    margin: -4px 8px 0 0;
+    border-radius: 100%;
+    border: 3px solid #148793;
+    max-width: 45px;
+}
+
+.nav>li>a>span.user-info{padding-right: 15px;color: #148793;}
 
 
 /* Top Right Navigation Dropdown Styles */
 .navbar-top-links li {
     display: inline-block;
-}
-
-.navbar-top-links li a {
-    padding: 15px;
-    min-height: 50px;
 }
 
 .navbar-top-links .dropdown-menu li {

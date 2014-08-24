@@ -3,14 +3,12 @@
     (function($) {
         $(document).on('ready', function() {
             mainContainer = new WidgetMainContainer('body');
-            new WidgetAddWidget( mainContainer, {Basic:{widgets:['WidgetContainer'], open:true}} );
-
+            new WidgetAddWidget( mainContainer, {Web:{widgets:['WidgetContainer'], open:true}} );
             $('.overlay').on('click', function(){
                 $('.widget-add').removeClass('clicked').removeClass('col-md-4').addClass('col-md-2');
                 $('.overlay').hide();
                 $('.content',$('.widget-add')).removeClass('height-2').addClass('height-1');
             });
-
         });
     })(jQuery);
 </script>

@@ -7,6 +7,11 @@ var guid = (function() {
     };
 })();
 
+
+var registeredWidgets = ['WidgetContainer','WidgetEmpty'];
+
+var protohypeMessages = {'confirmDelete':' Are you sure you want to delete this widget?'};
+
 var BackgroundSelector = function( widget, selector, label){
     this.widget = widget;
     this.guid = guid();
