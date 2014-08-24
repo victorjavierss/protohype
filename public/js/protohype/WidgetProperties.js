@@ -15,8 +15,8 @@ var protohypeMessages = {'confirmDelete':' Are you sure you want to delete this 
 var BackgroundSelector = function( widget, selector, label){
     this.widget = widget;
     this.guid = guid();
-    this.label = label ? label : this.label
-    this.target = selector ? selector : widget.target;
+    this.label  = label || this.label;
+    this.target  = selector || widget.target;
     this.init();
 };
 
@@ -80,10 +80,12 @@ ContainerWrapper.prototype.init = function() {
 
 var ColumnCount = function( widget, initial, min, max ){
     this.widget = widget;
+
+    this.value = this.initial = initial || 3;
+    this.min  = min || 2;
+    this.max = max || 12;
+
     this.init();
-    this.initial = initial ? initial : 3;
-    this.min = min ? min : 2;
-    this.max = max ? max : 12;
 };
 
 ColumnCount.prototype.widget = null;
@@ -96,9 +98,11 @@ ColumnCount.prototype.label = '# Columns';
 ColumnCount.prototype.init = function() {
     var widget = this.widget;
     var property = this;
+
+    $(widget.container).addClass('col-md-'+property.initial);
     var propertyDiv = $("<div class='widget-property'></div>");
     propertyDiv.append( this.label );
-    propertyDiv.append( $("<input type='range' id='"+widget.guid+"-column-count' min='"+widget.min+"' max='"+widget.max+"' value='"+widget.initial+"' />") );
+    propertyDiv.append( $("<input type='number' id='"+widget.guid+"-column-count' min='"+property.min+"' max='"+property.max+"' step='1' value='"+property.initial+"' />") );
     $('.properties-config', widget.container).append(propertyDiv);
     $('#'+widget.guid+'-column-count').on('change', function(evt){
         $(widget.container).removeClass('col-md-' + property.value );

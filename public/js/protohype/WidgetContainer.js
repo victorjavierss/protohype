@@ -6,12 +6,12 @@ var WidgetContainer = function( target ){
 
 WidgetContainer.prototype.guid = 0;
 WidgetContainer.prototype.description = 'Container';
-WidgetContainer.prototype.icon = 'fa-square-o';
+WidgetContainer.prototype.icon = 'fa-archive';
 WidgetContainer.prototype.target = '';
 WidgetContainer.prototype.container = null;
 WidgetContainer.prototype.widgets = null;
 
-WidgetContainer.prototype.layout = "<div id='@GUID@' class='height-1 col-md-6 widget-type-container'>"
+WidgetContainer.prototype.layout = "<div id='@GUID@' class='height-1 widget-type-container'>"
                                     +"<div class='container-config'>"
                                     +"<div class='opener'><i class='fa fa-cog'></i></div>"
                                     +"<div class='delete'><i class='fa fa-trash-o'></i></div>"
@@ -38,7 +38,7 @@ WidgetContainer.prototype.init = function(){
 
     WidgetContainer.prototype.attribs['background'] = new BackgroundSelector( this, '#'+this.guid );;
     WidgetContainer.prototype.attribs['wrapper'] = new ContainerWrapper( this );
-    WidgetContainer.prototype.attribs['column'] = new ColumnCount( this, 3, 12 );
+    WidgetContainer.prototype.attribs['column'] = new ColumnCount( this, 6, 3, 12 );
     WidgetContainer.prototype.attribs['column'].value = 6;
 
 
@@ -53,7 +53,11 @@ WidgetContainer.prototype.init = function(){
         });
     });
 
-    new WidgetAddWidget( this, {Web:{widgets:['WidgetEmpty','WidgetHTML'], open:true}, Video:{widgets:['WidgetEmpty']},Slider:{widgets:['WidgetEmpty']},Forms:{widgets:['WidgetEmpty']} }  );
+    new WidgetAddWidget( this, {Web:{widgets:['WidgetHTML','WidgetMenu','WidgetMedia','WidgetSocialNetworks'], open:true},
+                                Video:{widgets:['WidgetVideoEmbed','WidgetVideoUpload']},
+                                Monetization:{widgets:['WidgetEmpty']},
+                                Forms:{widgets:['WidgetFormContact','WidgetFormSearch','WidgetFormNewsletter']}
+                        });
 };
 
 WidgetContainer.prototype.add = function( widget ){
@@ -64,6 +68,6 @@ WidgetContainer.prototype.add = function( widget ){
 
 WidgetContainer.prototype.remove = function( widget ){
     if ( typeof widget  == 'object' ){
-        this.widgets.add( new window[ widget ] ( this) );
+        this.widgets.remove( widget );
     }
 };

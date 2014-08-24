@@ -7,6 +7,11 @@ body {
     color: #3B5957;
 }
 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    -webkit-font-smoothing: antialiased;
+    font-family: Roboto,Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
 /* Wrappers */
 
 /* ------------------------------- */
@@ -267,14 +272,15 @@ body .main-content{
 }
 
 .page-editor .widget-add.clicked .content{
-    border: 2px solid #6a8789;
+    border: 0;
+    border-radius: 35px;
 }
 
-.page-editor .widget-add .available-widgets,
+.page-editor .widget-add .available-widgets-wrapper,
 .page-editor .widget-add.clicked .add-widget{
     display: none;
 }
-.page-editor .widget-add.clicked .available-widgets{
+.page-editor .widget-add.clicked .available-widgets-wrapper{
     display: block;
 }
 
@@ -296,16 +302,92 @@ body .main-content{
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255,255,255, 0.5);
+    background: rgba( 226, 242, 240, 0.7);
     z-index: 100000;
-    -webkit-filter: blur(20px);
-    -moz-filter: blur(20px);
-    -o-filter: blur(20px);
-    -ms-filter: blur(20px);
-    filter: blur(20px);
-    opacity: 0.4;
     display: none;
 }
+
+.available-widgets-header{
+    background-color: #778281;
+    padding: 12px 15px;
+    color: #FFF;
+    font-size: 22px;
+}
+
+.available-widgets-header .panel-title>a{
+    font-size: 17px;
+    font-weight: bold;
+    color: #778281;
+}
+
+.available-widgets-header button.close{
+    background: #FFF;
+    opacity: 1;
+    border-radius: 100%;
+    color: #778281;
+    width: 25px;
+    height: 25px;
+}
+
+.available-widgets.panel-group .panel{
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+.available-widgets .panel-default>.panel-heading {
+    background: #FFF;
+    color: #778281;
+    border-radius: 0;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    padding: 20px 0 20px 75px;
+}
+
+.available-widgets .panel-default>.panel-heading.category-Web{
+    background-image: url(../img/web_icon.png);
+}
+
+.available-widgets .panel-default>.panel-heading.category-Video{
+    background-image: url(../img/video_icon.png);
+}
+
+.available-widgets .panel-default>.panel-heading.category-Forms{
+    background-image: url(../img/forms_icon.png);
+}
+
+.available-widgets .panel-default>.panel-heading.category-Monetization{
+    background-image: url(../img/forms_icon.png);
+}
+
+.available-widgets .panel-default > .panel-collapse{
+    background: #e2edec;
+}
+
+.available-widgets.panel-group .panel+.panel{
+    margin-top: 0;
+    border-top: 0;
+}
+
+.btn.btn-default{
+    background: transparent;
+    border-color: transparent;
+    color: #778281;
+    padding: 10px 20px;
+}
+
+.btn.btn-default i{
+    margin-right: 5px;
+}
+
+.btn.btn-default:hover,
+.btn.btn-default:focus,
+.btn.btn-default:active,
+.btn.btn-default.active{
+    color: #778281;
+    border-color: #ccc;
+}
+
 
 
 /* .properties-config Bubble */
