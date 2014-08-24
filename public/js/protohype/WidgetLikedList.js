@@ -8,6 +8,9 @@ WidgetNode.prototype = {
     ,next: null
     ,_w  : null
     ,_wl : null
+    ,getIndex : function(){
+        return this._w.guid;
+    }
     ,switchPrev : function(){
         if( this.prev ){
             var nextNode = this.prev;
@@ -81,34 +84,42 @@ WidgetList.prototype = {
         }
         this._length++;
     },
-    remove: function( index ){
-        //check for out-of-bounds values
-        if (index > -1 && index < this._length){
-            var current = this._head,
-                i = 0;
-            if (index === 0){
-                this._head = current.next;
-
-                if (!this._head){
-                    this._tail = null;
-                } else {
-                    this._head.prev = null;
-                }
-            } else if (index === this._length -1){
-                current = this._tail;
-                this._tail = current.prev;
-                this._tail.next = null;
-            } else {
-                while(i++ < index){
-                    current = current.next;
-                }
-                current.prev.next = current.next;
+    searchNode: function( widget ){
+        var currentNode =  this._head;
+        do{
+            if (currentNode.getIndex() == widget.guid ){
+                return currentNode;
             }
+            currentNode = currentNode.next;
+        }while( currentNode );
+
+        return false;
+    },
+    remove: function( widget ){
+
+        var node = this.searchNode( widget );
+        if(node){
+            if( ! node.prev ){
+                this._head = node.next;
+            }
+
+            if( ! node.next ){
+                this._tail = node.prev;
+            }
+
+            if( node.prev ){
+                node.prev.next = node.next;
+            }
+
+            if( node.next ){
+                node.next.prev = node.prev;
+            }
+
+            node.next = null;
+            node.prev = null;
             this._length--;
-            return current.data;
-        } else {
-            return null;
         }
+        delete node;
     },
     getNode : function( index ){
         var startBegining = index < (this._length / 2);

@@ -26,7 +26,7 @@ WidgetContainer.prototype.init = function(){
     this.widgets = new WidgetList();
     var contentToAppend = this.layout.replace('@GUID@', this.guid );
 
-    $( contentToAppend ).insertBefore( $( this.target.selector + '> .content > .widget-add' ) );
+    $( contentToAppend ).insertBefore( $( this.target.container.selector + '> .content > .widget-add' ) );
 
     this.container = $('#'+this.guid);
 
@@ -42,15 +42,14 @@ WidgetContainer.prototype.init = function(){
     WidgetContainer.prototype.attribs['column'].value = 6;
 
     $('.delete', this.container).on('click', function(evt){
-        $(plugin).addClass('deleting');
+        $(plugin.container).addClass('deleting');
         bootbox.confirm(protohypeMessages.confirmDelete, function(resp){
             $(plugin.container).removeClass('deleting');
             if(resp){
-                console.log(plugin.target);
-               // $(plugin.container).remove();
+                $(plugin.container).remove();
+                plugin.target.remove(plugin);
             }
         });
-
     });
 
     new WidgetAddWidget( this, {Web:{widgets:['WidgetEmpty'], open:true}, Video:{widgets:['WidgetEmpty']},Slider:{widgets:['WidgetEmpty']},Forms:{widgets:['WidgetEmpty']} }  );
@@ -58,6 +57,12 @@ WidgetContainer.prototype.init = function(){
 
 WidgetContainer.prototype.add = function( widget ){
     if ( typeof window[ widget ] == 'function' ){
-        this.widgets.add( new window[ widget ] ( this.container) );
+        this.widgets.add( new window[ widget ] ( this) );
+    }
+};
+
+WidgetContainer.prototype.remove = function( widget ){
+    if ( typeof widget  == 'function' ){
+        this.widgets.add( new window[ widget ] ( this) );
     }
 };

@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57619e1c-e43a-4d5d-b3ec-f8fc30813a76" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/protohype/WidgetContainer.js" afterPath="$PROJECT_DIR$/public/js/protohype/WidgetContainer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/protohype/WidgetEmpty.js" afterPath="$PROJECT_DIR$/public/js/protohype/WidgetEmpty.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/protohype/WidgetLikedList.js" afterPath="$PROJECT_DIR$/public/js/protohype/WidgetLikedList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/protohype/WidgetMainContainer.js" afterPath="$PROJECT_DIR$/public/js/protohype/WidgetMainContainer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="protohype.iws" />
@@ -44,6 +48,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="WidgetEmpty.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetEmpty.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="21" selection-start="1888" selection-end="1888" vertical-scroll-proportion="-18.538462" vertical-offset="163" max-vertical-offset="900">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="editor.phtml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/Editor/view/layout/editor.phtml">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,16 +78,18 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="17" selection-start="1492" selection-end="1492" vertical-scroll-proportion="-6.3461537" vertical-offset="1095" max-vertical-offset="5250">
-              <folding />
+            <state line="83" column="17" selection-start="1461" selection-end="1461" vertical-scroll-proportion="-6.3461537" vertical-offset="1080" max-vertical-offset="5235">
+              <folding>
+                <marker date="1408899099000" expanded="true" signature="2712:2789" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WidgetProperties.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="WidgetProperties.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetProperties.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="81" selection-start="3563" selection-end="3563" vertical-scroll-proportion="0.6914557" vertical-offset="1018" max-vertical-offset="1650">
+            <state line="97" column="49" selection-start="3531" selection-end="3531" vertical-scroll-proportion="-16.807692" vertical-offset="1018" max-vertical-offset="1650">
               <folding />
             </state>
           </provider>
@@ -83,7 +98,25 @@
       <file leaf-file-name="WidgetContainer.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="100" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="1020">
+            <state line="43" column="4" selection-start="1841" selection-end="2224" vertical-scroll-proportion="-10.961538" vertical-offset="360" max-vertical-offset="1095">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WidgetMainContainer.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetMainContainer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="24" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WidgetLikedList.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetLikedList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="119" column="27" selection-start="2826" selection-end="2826" vertical-scroll-proportion="0.8206687" vertical-offset="1245" max-vertical-offset="2850">
               <folding />
             </state>
           </provider>
@@ -108,7 +141,6 @@
         <option value="$PROJECT_DIR$/module/Application/view/application/index/index.phtml" />
         <option value="$PROJECT_DIR$/ExperienceBuilderCC.xml" />
         <option value="$PROJECT_DIR$/module/Application/src/Protohype/Widget/Container.php" />
-        <option value="$PROJECT_DIR$/public/js/protohype/WidgetLikedList.js" />
         <option value="$PROJECT_DIR$/module/Application/src/Protohype/Widget/Base.php" />
         <option value="$PROJECT_DIR$/module/Application/src/Protohype/Widget/Html.php" />
         <option value="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
@@ -147,15 +179,16 @@
         <option value="$PROJECT_DIR$/public/js/vendor/jquery.simplecolorpicker.js" />
         <option value="$PROJECT_DIR$/public/css/vendor/simplecolorpicker.css" />
         <option value="$PROJECT_DIR$/config/application.config.php" />
-        <option value="$PROJECT_DIR$/public/js/protohype/WidgetEmpty.js" />
-        <option value="$PROJECT_DIR$/public/js/protohype/WidgetMainContainer.js" />
         <option value="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
         <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/module/Editor/view/editor/editor/index.phtml" />
         <option value="$PROJECT_DIR$/public/js/protohype/WidgetAddWidget.js" />
         <option value="$PROJECT_DIR$/module/Editor/view/layout/editor.phtml" />
         <option value="$PROJECT_DIR$/public/js/protohype/WidgetProperties.js" />
+        <option value="$PROJECT_DIR$/public/js/protohype/WidgetMainContainer.js" />
         <option value="$PROJECT_DIR$/public/js/protohype/WidgetContainer.js" />
+        <option value="$PROJECT_DIR$/public/js/protohype/WidgetEmpty.js" />
+        <option value="$PROJECT_DIR$/public/js/protohype/WidgetLikedList.js" />
       </list>
     </option>
   </component>
@@ -401,10 +434,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1439" y="22" width="1920" height="1058" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28985506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28985506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -666,13 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetLikedList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="10" selection-start="1499" selection-end="1509" vertical-scroll-proportion="0.4606526" vertical-offset="750" max-vertical-offset="2685">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="8908" selection-start="9046" selection-end="9056" vertical-scroll-proportion="0.186722" vertical-offset="0" max-vertical-offset="482">
@@ -701,20 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetEmpty.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="1161" selection-end="1161" vertical-scroll-proportion="0.612462" vertical-offset="2" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetMainContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="2" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.7066869" vertical-offset="0" max-vertical-offset="658">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="105" selection-start="2096" selection-end="2096" vertical-scroll-proportion="-10.791667" vertical-offset="341" max-vertical-offset="1125">
@@ -724,8 +736,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="17" selection-start="1492" selection-end="1492" vertical-scroll-proportion="-6.3461537" vertical-offset="1095" max-vertical-offset="5250">
-          <folding />
+        <state line="83" column="17" selection-start="1461" selection-end="1461" vertical-scroll-proportion="-6.3461537" vertical-offset="1080" max-vertical-offset="5235">
+          <folding>
+            <marker date="1408899099000" expanded="true" signature="2712:2789" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -743,6 +757,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetProperties.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="49" selection-start="3531" selection-end="3531" vertical-scroll-proportion="-16.807692" vertical-offset="1018" max-vertical-offset="1650">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetAddWidget.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="8" selection-start="2898" selection-end="2898" vertical-scroll-proportion="0.0" vertical-offset="407" max-vertical-offset="1080">
@@ -752,14 +773,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetContainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="100" selection-start="475" selection-end="475" vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="1020">
+        <state line="43" column="4" selection-start="1841" selection-end="2224" vertical-scroll-proportion="-10.961538" vertical-offset="360" max-vertical-offset="1095">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetProperties.js">
+    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetEmpty.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="81" selection-start="3563" selection-end="3563" vertical-scroll-proportion="0.6914557" vertical-offset="1018" max-vertical-offset="1650">
+        <state line="43" column="21" selection-start="1888" selection-end="1888" vertical-scroll-proportion="-18.538462" vertical-offset="163" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetMainContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="24" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetLikedList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="27" selection-start="2826" selection-end="2826" vertical-scroll-proportion="0.8206687" vertical-offset="1245" max-vertical-offset="2850">
           <folding />
         </state>
       </provider>
