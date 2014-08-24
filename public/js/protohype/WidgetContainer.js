@@ -41,6 +41,7 @@ WidgetContainer.prototype.init = function(){
     WidgetContainer.prototype.attribs['column'] = new ColumnCount( this, 3, 12 );
     WidgetContainer.prototype.attribs['column'].value = 6;
 
+
     $('.delete', this.container).on('click', function(evt){
         $(plugin.container).addClass('deleting');
         bootbox.confirm(protohypeMessages.confirmDelete, function(resp){
@@ -52,7 +53,7 @@ WidgetContainer.prototype.init = function(){
         });
     });
 
-    new WidgetAddWidget( this, {Web:{widgets:['WidgetEmpty'], open:true}, Video:{widgets:['WidgetEmpty']},Slider:{widgets:['WidgetEmpty']},Forms:{widgets:['WidgetEmpty']} }  );
+    new WidgetAddWidget( this, {Web:{widgets:['WidgetEmpty','WidgetHTML'], open:true}, Video:{widgets:['WidgetEmpty']},Slider:{widgets:['WidgetEmpty']},Forms:{widgets:['WidgetEmpty']} }  );
 };
 
 WidgetContainer.prototype.add = function( widget ){
@@ -62,7 +63,7 @@ WidgetContainer.prototype.add = function( widget ){
 };
 
 WidgetContainer.prototype.remove = function( widget ){
-    if ( typeof widget  == 'function' ){
+    if ( typeof widget  == 'object' ){
         this.widgets.add( new window[ widget ] ( this) );
     }
 };
