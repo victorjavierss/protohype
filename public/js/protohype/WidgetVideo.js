@@ -5,20 +5,20 @@ var WidgetVideo = function( target ){
 }
 
 WidgetVideo.prototype.guid = 0;
-WidgetVideo.prototype.description = 'HTML Widget';
-WidgetVideo.prototype.icon = 'fa-pencil-square-o';
+WidgetVideo.prototype.description = 'Backlot';
+WidgetVideo.prototype.icon = 'fa-play-circle-o';
 WidgetVideo.prototype.target = '';
 WidgetVideo.prototype.container = null;
 WidgetVideo.prototype.widgets = null;
 
-WidgetVideo.prototype.layout = "<div id='@GUID@' class='widget col-md-4 widget-type-html'>"
+WidgetVideo.prototype.layout = "<div id='@GUID@' class='widget widget-type-video-backlot'>"
                                     +"<div class='container-config'>"
                                     +"<div class='opener'><i class='fa fa-cog'></i></div>"
                                     +"<div class='delete'><i class='fa fa-trash-o'></i></div>"
                                     +"<div class='properties-config bubble'></div>"
                                     +"</div>"
-                                    +"<div class='content height-1'>"
-                                    +"<textarea name='@GUID@-editor' id='@GUID@-editor'></textarea>"
+                                    +"<div class='content'>"
+                                    +"<div id='@GUID@-player'></div>"
                                     +"</div>"
                                     +"</div>";
 
@@ -32,37 +32,63 @@ WidgetVideo.prototype.init = function(){
 
     this.container = $('#'+this.guid);
     var plugin = this;
+    
+    plugin.getVideos();
+    
     $('.opener', this.container).on('click', function(evt){
         $('.properties-config', plugin.container).toggle();
+            
+    });
+
+    $('.delete', this.container).on('click', function(evt){
+        $(plugin.container).addClass('deleting');
+        bootbox.confirm(protohypeMessages.confirmDelete, function(resp){
+            $(plugin.container).removeClass('deleting');
+            if(resp){
+                $(plugin.container).remove();
+                plugin.target.remove(plugin);
+            }
+        });
+    });
+
+    $('.properties-config.bubble .thumb_image').on('click', function(evt){
+
     });
     
-    this.attribs['columnCount'] = new ColumnCount( this, 4 );
+    this.attribs['columnCount'] = new ColumnCount( this, 10 );
 
 }
 
 WidgetVideo.prototype.getVideos = function(){
-    $.ajax({
-        type: "GET",
-        data: {
-            "path":"assets",
-            "method": 'GET'
-        },
-        url: "../../php/functions.php",
-        success: function (data) {
-            addVideosToList(data);
-        },
-        error: function (data) {
-            alert("e " + data);
-        }
+    var plugin = this;
+    $.get("php/functions.php",{ "path":"assets", "method": 'GET'}, function(data){
+        plugin.addVideosToList(data);
+    },'json' ).error(function(data){
+        console.log("e " + data);
     });
 }
 
-WidgetVideo.prototype.addVideosToList = function(){
-    var video_data = jQuery.parseJSON(data);        
-    $.each(video_data.items, function(i,video) {                
-       $(".content .height-1").append('<div class="video_list_item">' +
-            '<img src="' + (video.preview_image_url==null?'http://heicard.com.vn/Content/images/DefaultThumbnail.gif':video.preview_image_url) + '" alt="image" class="thumb_image"/>' +                            
+WidgetVideo.prototype.addVideosToList = function( data ){
+    var plugin = this; 
+    console.log(typeof data);
+    $.each(data.items, function(i, video) {                
+
+        var videoDiv = $('<div class="video_list_item">' +
+            '<img src="' + (video.preview_image_url==null?'http://heicard.com.vn/Content/images/DefaultThumbnail.gif':video.preview_image_url) + '" alt="image" class="thumb_image"/>' + 
             '<div class="video_title">'+ video.name + '</div>' +
             '</div>');
+
+        $(videoDiv).on('click', function(){
+            plugin.generatePlayer( video.embed_code );
+        });
+
+       $(".properties-config.bubble", plugin.container).append(videoDiv);
         }); 
+}
+
+WidgetVideo.prototype.generatePlayer = function(ec){
+    var plugin = this;
+    OO.Player.create(plugin.guid+'-player', ec,{
+        width:640, height: 360
+    }); 
 }

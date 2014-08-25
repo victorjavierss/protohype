@@ -55,7 +55,7 @@ WidgetContainer.prototype.init = function(){
     });
 
     new WidgetAddWidget( this, {Web:{widgets:['WidgetHTML','WidgetMenu','WidgetSlider','WidgetMedia','WidgetSocialNetworks'], open:true},
-                                Video:{widgets:['WidgetVideoFeed','WidgetVideoEmbed','WidgetVideoUpload']},
+                                Video:{widgets:['WidgetVideo','WidgetVideoFeed','WidgetVideoEmbed','WidgetVideoUpload']},
                                 Monetization:{widgets:['WidgetMonetizationVideoAds','WidgetMonetizationBanners','WidgetMonetizationPromotions']},
                                 Forms:{widgets:['WidgetFormContact','WidgetFormSearch','WidgetFormNewsletter']}
                         });

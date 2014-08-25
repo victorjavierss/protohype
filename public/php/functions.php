@@ -1,5 +1,11 @@
 <?php
+
+    header("Content-Type application/json");
+  //echo getcwd();
     require 'OoyalaSignature.php';
+
+
+  //  var_dump(get_declared_classes());
 	
 	$api_key = "01bXExOlsXvZN75zdTp-QCTJeOVQ.oTUFr";
 	$api_secret = "udHaAhi35KFOQLK2DYViVe5WgRTCseLQp-c6HKV_";

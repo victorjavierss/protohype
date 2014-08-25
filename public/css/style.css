@@ -432,8 +432,6 @@ body .main-content{
 
 .bubble {
     position: relative;
-    width: 250px;
-    height: 173px;
     padding: 0px;
     background: #fff;
     border: #7a7a7a solid 1px;
@@ -478,4 +476,33 @@ body .main-content{
   .cke_toolgroup {margin: 0 6px 2px 0 !important;}
 
   a.cke_button {height: 16px !important;}
+
+  /* Video list */
+
+    .video_list_item{
+        width:500px;
+        margin:10px;
+        cursor:pointer;
+    }
+
+    .video_list_item:hover{
+        background-color: #eee;
+    }
+
+    .video_title{
+        display: inline-block;  
+    }
+
+    .thumb_image{
+        margin-right: 10px;
+        width:100px;
+        height:65px;
+    }
+
+   .innerWrapper{
+    height: 100%;
+   }
+
+
+        
 

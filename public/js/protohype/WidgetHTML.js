@@ -49,6 +49,17 @@ WidgetHTML.prototype.init = function(){
             plugin.attribs['value'] = editorInstance.getData();
         }
     });
+
+    $('.delete', this.container).on('click', function(evt){
+        $(plugin.container).addClass('deleting');
+        bootbox.confirm(protohypeMessages.confirmDelete, function(resp){
+            $(plugin.container).removeClass('deleting');
+            if(resp){
+                $(plugin.container).remove();
+                plugin.target.remove(plugin);
+            }
+        });
+    });
     
     this.attribs['columnCount'] = new ColumnCount( this, 4 );
 
