@@ -224,6 +224,15 @@ body .main-content{
     color:white;
 }
 
+.page-editor .container-config .addWidget{
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;   
+    float: left;
+    font-size: 21px;
+    color:white;
+}
+
 .page-editor .container-config .opener:hover{
     /*text-shadow: 0 0 2px;*/
 }

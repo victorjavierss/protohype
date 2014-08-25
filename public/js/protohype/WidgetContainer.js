@@ -14,6 +14,7 @@ WidgetContainer.prototype.widgets = null;
 WidgetContainer.prototype.layout = "<div id='@GUID@' class='height-1 widget-type-container'>"
                                     +"<div class='container-config'>"
                                     +"<div class='opener'><i class='fa fa-cog'></i></div>"
+                                    +"<div class='addWidget'><i class='fa fa-plus-circle'></i></div>"
                                     +"<div class='delete'><i class='fa fa-trash-o'></i></div>"
                                     +"<div class='properties-config bubble'></div>"
                                     +"</div>"

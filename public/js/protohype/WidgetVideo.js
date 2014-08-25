@@ -47,7 +47,7 @@ WidgetVideo.prototype.getVideos = function(){
             "path":"assets",
             "method": 'GET'
         },
-        url: "php/functions.php",
+        url: "../../php/functions.php",
         success: function (data) {
             addVideosToList(data);
         },
@@ -60,7 +60,7 @@ WidgetVideo.prototype.getVideos = function(){
 WidgetVideo.prototype.addVideosToList = function(){
     var video_data = jQuery.parseJSON(data);        
     $.each(video_data.items, function(i,video) {                
-       $("#video_collection").append('<div class="video_list_item">' +
+       $(".content .height-1").append('<div class="video_list_item">' +
             '<img src="' + (video.preview_image_url==null?'http://heicard.com.vn/Content/images/DefaultThumbnail.gif':video.preview_image_url) + '" alt="image" class="thumb_image"/>' +                            
             '<div class="video_title">'+ video.name + '</div>' +
             '</div>');

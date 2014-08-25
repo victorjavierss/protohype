@@ -14,7 +14,7 @@ WidgetHTML.prototype.widgets = null;
 WidgetHTML.prototype.layout = "<div id='@GUID@' class='widget col-md-4 widget-type-html'>"
                                     +"<div class='container-config'>"
                                     +"<div class='opener'><i class='fa fa-cog'></i></div>"
-                                    +"<div class='editor'><i class='fa fa-font'></i></div>"
+                                    +"<div class='editor'><i class='fa fa-pencil'></i></div>"
                                     +"<div class='delete'><i class='fa fa-trash-o'></i></div>"
                                     +"<div class='properties-config bubble'></div>"
                                     +"</div>"
@@ -52,10 +52,9 @@ WidgetHTML.prototype.init = function(){
     
     this.attribs['columnCount'] = new ColumnCount( this, 4 );
 
-    /* CKEDITOR confi */  
-    /* CKEDITOR confi cke_toolgroup*/  
+    /* CKEDITOR config */
     CKEDITOR.replace(this.guid+'-editor',{
-            uiColor: '#ededed',
+            uiColor: '#ffffff',
             readOnly:true,
             height: '116px',
             removePlugins:'elementspath',
@@ -63,16 +62,8 @@ WidgetHTML.prototype.init = function(){
             toolbarLocation: 'bottom',
             colorButton_colors: '00923E,F8C100,28166F'
         });
-    
-    //CKEDITOR.config.colorButton_colors = '00923E,F8C100,28166F';
-    //CKEDITOR.config.colorButton_enableMore = true;
-    /*CKEDITOR.config.toolbar = [
-            ['Bold','Italic','Image','Link','colors' ]
-      ];*/
 
     CKEDITOR.config.toolbar = [
-        //{ name: 'clipboard', items: ['Paste', 'PasteText', 'PasteFromWord' ] },
-        //'/',
         { name: 'basicstyles', items: [ 'Bold', 'Italic' ] },
         { name: 'insert', items: [ 'Image', 'Link'] },
         { name: 'colors'}
