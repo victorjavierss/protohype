@@ -18,7 +18,7 @@ WidgetVideo.prototype.layout = "<div id='@GUID@' class='widget widget-type-video
                                     +"<div class='properties-config bubble'></div>"
                                     +"</div>"
                                     +"<div class='content'>"
-                                    +"<div id='@GUID@-player'></div>"
+                                    +"<div id='@GUID@-player' class='videoDiv'></div>"
                                     +"</div>"
                                     +"</div>";
 
@@ -88,7 +88,5 @@ WidgetVideo.prototype.addVideosToList = function( data ){
 
 WidgetVideo.prototype.generatePlayer = function(ec){
     var plugin = this;
-    OO.Player.create(plugin.guid+'-player', ec,{
-        width:640, height: 360
-    }); 
+    OO.Player.create(plugin.guid+'-player', ec); 
 }
