@@ -6,12 +6,12 @@ var WidgetContainer = function( target ){
 
 WidgetContainer.prototype.guid = 0;
 WidgetContainer.prototype.description = 'Container';
-WidgetContainer.prototype.icon = 'fa-archive';
+WidgetContainer.prototype.icon = 'fa-inbox';
 WidgetContainer.prototype.target = '';
 WidgetContainer.prototype.container = null;
 WidgetContainer.prototype.widgets = null;
 
-WidgetContainer.prototype.layout = "<div id='@GUID@' class='height-1 widget-type-container'>"
+WidgetContainer.prototype.layout = "<div id='@GUID@' class='height-1 widget widget-type-container'>"
                                     +"<div class='container-config'>"
                                     +"<div class='opener'><i class='fa fa-cog'></i></div>"
                                     +"<div class='delete'><i class='fa fa-trash-o'></i></div>"
@@ -53,9 +53,9 @@ WidgetContainer.prototype.init = function(){
         });
     });
 
-    new WidgetAddWidget( this, {Web:{widgets:['WidgetHTML','WidgetMenu','WidgetMedia','WidgetSocialNetworks'], open:true},
-                                Video:{widgets:['WidgetVideoEmbed','WidgetVideoUpload']},
-                                Monetization:{widgets:['WidgetEmpty']},
+    new WidgetAddWidget( this, {Web:{widgets:['WidgetHTML','WidgetMenu','WidgetSlider','WidgetMedia','WidgetSocialNetworks'], open:true},
+                                Video:{widgets:['WidgetVideoFeed','WidgetVideoEmbed','WidgetVideoUpload']},
+                                Monetization:{widgets:['WidgetMonetizationVideoAds','WidgetMonetizationBanners','WidgetMonetizationPromotions']},
                                 Forms:{widgets:['WidgetFormContact','WidgetFormSearch','WidgetFormNewsletter']}
                         });
 };

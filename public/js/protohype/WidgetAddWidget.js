@@ -58,7 +58,7 @@ WidgetAddWidget.prototype.init = function(){
                 var widgetP = window[widget].prototype;
                 var button = $('<button type="button" class="btn btn-default" data-type="'+widget+'"  '
                     +'title="'+widgetP.description+'">'
-                    +'<i class="fa '+widgetP.icon+'" data-type="'+widget+'"></i> '+widgetP.description+'</button>');
+                    +'<i class="fa '+widgetP.icon+'" data-type="'+widget+'"></i>'+widgetP.description+'</button>');
 
                 $(button).on('click', function(evt){
                     plugin.target.add( $(evt.target).data('type') );
