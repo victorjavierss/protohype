@@ -51,6 +51,9 @@ WidgetHTML.prototype.init = function(){
     });
     
     this.attribs['columnCount'] = new ColumnCount( this, 4 );
+    this.attribs['height'] = new ContainerHeight( this, 1 );
+
+
 
     /* CKEDITOR confi */  
     /* CKEDITOR confi cke_toolgroup*/  

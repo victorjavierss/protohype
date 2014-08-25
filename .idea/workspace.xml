@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57619e1c-e43a-4d5d-b3ec-f8fc30813a76" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/monetization_icon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/protohype/WidgetAddWidget.js" afterPath="$PROJECT_DIR$/public/js/protohype/WidgetAddWidget.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/protohype/WidgetContainer.js" afterPath="$PROJECT_DIR$/public/js/protohype/WidgetContainer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/protohype/WidgetDummies.js" afterPath="$PROJECT_DIR$/public/js/protohype/WidgetDummies.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Editor/view/layout/editor.phtml" afterPath="$PROJECT_DIR$/module/Editor/view/layout/editor.phtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/protohype/WidgetHTML.js" afterPath="$PROJECT_DIR$/public/js/protohype/WidgetHTML.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/protohype/WidgetProperties.js" afterPath="$PROJECT_DIR$/public/js/protohype/WidgetProperties.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Editor/view/editor/editor/index.phtml" afterPath="$PROJECT_DIR$/module/Editor/view/editor/editor/index.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="protohype.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,30 +29,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="module.config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Application/config/module.config.php">
+      <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Editor/view/editor/editor/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="66" selection-start="1328" selection-end="1338" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="1530">
+            <state line="14" column="72" selection-start="735" selection-end="741" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="360">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndexController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="32" selection-start="352" selection-end="362" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="450">
-              <folding>
-                <element signature="e#366#406#0" expanded="true" />
-              </folding>
+            <state line="202" column="14" selection-start="3551" selection-end="3551" vertical-scroll-proportion="0.26107594" vertical-offset="2865" max-vertical-offset="7215">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="404.phtml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module/Application/view/error/404.phtml">
+      <file leaf-file-name="WidgetProperties.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetProperties.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="5" selection-start="162" selection-end="162" vertical-scroll-proportion="0.19788918" vertical-offset="0" max-vertical-offset="1695">
+            <state line="143" column="2" selection-start="5386" selection-end="5386" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2235">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WidgetContainer.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetContainer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="110" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1170">
               <folding />
             </state>
           </provider>
@@ -117,17 +121,17 @@
         <option value="$PROJECT_DIR$/public/js/protohype/WidgetMainContainer.js" />
         <option value="$PROJECT_DIR$/public/js/protohype/WidgetLikedList.js" />
         <option value="$PROJECT_DIR$/public/js/protohype/WidgetEmpty.js" />
-        <option value="$PROJECT_DIR$/public/js/protohype/WidgetProperties.js" />
-        <option value="$PROJECT_DIR$/module/Editor/view/editor/editor/index.phtml" />
-        <option value="$PROJECT_DIR$/public/js/protohype/WidgetHTML.js" />
         <option value="$PROJECT_DIR$/module/Editor/view/layout/editor.phtml" />
         <option value="$PROJECT_DIR$/public/js/protohype/WidgetContainer.js" />
         <option value="$PROJECT_DIR$/public/js/protohype/WidgetDummies.js" />
         <option value="$PROJECT_DIR$/public/js/protohype/WidgetAddWidget.js" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/module/Application/view/application/other/index.phtml" />
         <option value="$PROJECT_DIR$/module/Application/src/Application/Controller/OtherController.php" />
         <option value="$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php" />
+        <option value="$PROJECT_DIR$/public/js/protohype/WidgetHTML.js" />
+        <option value="$PROJECT_DIR$/public/js/protohype/WidgetProperties.js" />
+        <option value="$PROJECT_DIR$/module/Editor/view/editor/editor/index.phtml" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
       </list>
     </option>
   </component>
@@ -136,10 +140,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-35" />
+    <option name="x" value="1440" />
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="803" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -195,7 +199,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protohype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protohype" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -213,7 +235,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
+              <option name="myItemId" value="Editor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -231,7 +253,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
+              <option name="myItemId" value="Editor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -253,7 +275,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
+              <option name="myItemId" value="Editor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -261,7 +283,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
+              <option name="myItemId" value="editor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="editor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -276,44 +302,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protohype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protohype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -370,11 +358,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-35" y="22" width="1920" height="803" extended-state="6" />
-    <editor active="false" />
+    <frame x="1440" y="22" width="1920" height="1058" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39381152" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28985506" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -645,20 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetProperties.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="3111" selection-end="3111" vertical-scroll-proportion="0.29331306" vertical-offset="1097" max-vertical-offset="1755">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Editor/view/editor/editor/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="77" selection-start="412" selection-end="412" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Editor/view/layout/editor.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="209" selection-start="2658" selection-end="2658" vertical-scroll-proportion="-11.25" vertical-offset="420" max-vertical-offset="1320">
@@ -682,30 +656,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetContainer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="110" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.7066869" vertical-offset="390" max-vertical-offset="1170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetDummies.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="61" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.63829786" vertical-offset="0" max-vertical-offset="1125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.11398176" vertical-offset="0" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="23" selection-start="3859" selection-end="3859" vertical-scroll-proportion="0.7234042" vertical-offset="2779" max-vertical-offset="7170">
           <folding />
         </state>
       </provider>
@@ -717,9 +670,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/error/404.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="29" selection-start="886" selection-end="886" vertical-scroll-proportion="0.83113456" vertical-offset="0" max-vertical-offset="1695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/src/Application/Controller/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="352" selection-end="362" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="450">
+        <state line="9" column="32" selection-start="352" selection-end="362" vertical-scroll-proportion="0.11873351" vertical-offset="0" max-vertical-offset="450">
           <folding>
             <element signature="e#366#406#0" expanded="true" />
           </folding>
@@ -728,14 +688,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/config/module.config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="66" selection-start="1328" selection-end="1338" vertical-scroll-proportion="-15.625" vertical-offset="0" max-vertical-offset="1530">
+        <state line="31" column="66" selection-start="1328" selection-end="1338" vertical-scroll-proportion="0.9894459" vertical-offset="0" max-vertical-offset="1530">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/error/404.phtml">
+    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetHTML.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="5" selection-start="162" selection-end="162" vertical-scroll-proportion="0.19788918" vertical-offset="0" max-vertical-offset="1695">
+        <state line="13" column="64" selection-start="406" selection-end="406" vertical-scroll-proportion="-0.70972645" vertical-offset="662" max-vertical-offset="1320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetProperties.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="2" selection-start="5386" selection-end="5386" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2235">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/protohype/WidgetContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="110" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Editor/view/editor/editor/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="72" selection-start="735" selection-end="741" vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="360">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="202" column="14" selection-start="3551" selection-end="3551" vertical-scroll-proportion="0.26107594" vertical-offset="2865" max-vertical-offset="7215">
           <folding />
         </state>
       </provider>

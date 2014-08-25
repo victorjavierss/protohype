@@ -193,16 +193,19 @@ body .main-content{
 
 .widget > .container-config{
     opacity: 0;
+    border: 1px dashed transparent;
     -webkit-transition: .6s cubic-bezier(0,1.5,.5,1);
     -moz-transition: .6s cubic-bezier(0,1.5,.5,1);
     -o-transition: .6s cubic-bezier(0,1.5,.5,1);
     transition: .6s cubic-bezier(0,1.5,.5,1);
 }
 
+.widget.active .container-config,
 .widget:hover .container-config{
     opacity: 1;
 }
 
+.widget.active > .content,
 .widget:hover > .content{
     border: 1px dashed #344051;
     border-bottom: 0;

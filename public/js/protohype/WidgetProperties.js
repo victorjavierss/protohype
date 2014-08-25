@@ -110,3 +110,35 @@ ColumnCount.prototype.init = function() {
         $(widget.container).addClass('col-md-' + property.value );
     });
 };
+
+
+var ContainerHeight = function( widget, initial, min, max ){
+    this.widget = widget;
+    this.value = this.initial = initial || 1;
+    this.min  = min || 1;
+    this.max = max || 3;
+    this.init();
+};
+
+ContainerHeight.prototype.widget = null;
+ContainerHeight.prototype.value = null;
+ContainerHeight.prototype.initial = null;
+ContainerHeight.prototype.min = null;
+ContainerHeight.prototype.max = null;
+ContainerHeight.prototype.label = 'Height';
+
+ContainerHeight.prototype.init = function() {
+    var widget = this.widget;
+    var property = this;
+
+    $(widget.container.selector + '> .content').addClass('height-'+property.initial);
+    var propertyDiv = $("<div class='widget-property'></div>");
+    propertyDiv.append( this.label );
+    propertyDiv.append( $("<input type='number' id='"+widget.guid+"-height' min='"+property.min+"' max='"+property.max+"' step='1' value='"+property.initial+"' />") );
+    $('.properties-config', widget.container).append(propertyDiv);
+    $('#'+widget.guid+'-height').on('change', function(evt){
+        $(widget.container.selector + '> .content').removeClass('height-' + property.value );
+        property.value = $(this).val();
+        $(widget.container.selector + '> .content').addClass('height-' + property.value );
+    });
+};

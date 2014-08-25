@@ -10,5 +10,10 @@
                 $('.content',$('.widget-add')).removeClass('height-2').addClass('height-1');
             });
         });
+
+        $( document ).on( "click", "i.fa.fa-cog", function(evt) {
+            $(evt.target.parentNode.parentNode.parentNode).toggleClass('active');
+        });
+
     })(jQuery);
 </script>
