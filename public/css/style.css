@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 
 /* Nav Header */
 .navbar-header{
-    background: #42AEB7;
+    background: #28323f;
 }
 .navbar-header span{
     font-family: Pacifico, Helvetica Neue, Helvetica, Arial;
@@ -52,12 +52,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     padding: 14px 0;
 }
 
+
+.navbar-brand i{
+    color: #FFF;
+    display: inline-block;
+    margin-left: 10px;
+}
+
 .arrow-right {
     width: 0;
     height: 0;
     border-top: 44px solid transparent;
     border-bottom: 44px solid transparent;
-    border-left: 25px solid #42AEB7;
+    border-left: 25px solid #28323f;
     float: left
 }
 
@@ -65,7 +72,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 /* Navigation */
 
 /* ------------------------------- */
-.navbar{background: #4CC9CC;}
+.navbar{background: #344051;}
 
 li.dropdown>a{color:#FFF;}
 
@@ -184,6 +191,23 @@ body .main-content{
     background-color: #E8466D;
 }
 
+.widget > .container-config{
+    opacity: 0;
+    -webkit-transition: .6s cubic-bezier(0,1.5,.5,1);
+    -moz-transition: .6s cubic-bezier(0,1.5,.5,1);
+    -o-transition: .6s cubic-bezier(0,1.5,.5,1);
+    transition: .6s cubic-bezier(0,1.5,.5,1);
+}
+
+.widget:hover .container-config{
+    opacity: 1;
+}
+
+.widget:hover > .content{
+    border: 1px dashed #344051;
+    border-bottom: 0;
+}
+
 .page-editor div[class*="widget-type-"] > .content{
     margin-bottom: 30px;
 }
@@ -282,7 +306,8 @@ body .main-content{
 
 .page-editor .widget-add.clicked .content{
     border: 0;
-    border-radius: 35px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(23,74,81, 0.5);
 }
 
 .page-editor .widget-add .available-widgets-wrapper,
@@ -317,7 +342,7 @@ body .main-content{
 }
 
 .available-widgets-header{
-    background-color: #778281;
+    background-color: #344051;
     padding: 12px 15px;
     color: #FFF;
     font-size: 22px;
@@ -357,6 +382,10 @@ body .main-content{
     background-image: url(../img/web_icon.png);
 }
 
+.widget {
+    margin: 5px 0;
+}
+
 .available-widgets .panel-default>.panel-heading.category-Video{
     background-image: url(../img/video_icon.png);
 }
@@ -366,7 +395,7 @@ body .main-content{
 }
 
 .available-widgets .panel-default>.panel-heading.category-Monetization{
-    background-image: url(../img/forms_icon.png);
+    background-image: url(../img/monetization_icon.png);
 }
 
 .available-widgets .panel-default > .panel-collapse{
@@ -382,7 +411,7 @@ body .main-content{
     background: transparent;
     border-color: transparent;
     color: #778281;
-    padding: 10px 20px;
+    padding: 10px 17px;
 }
 
 .btn.btn-default i{
