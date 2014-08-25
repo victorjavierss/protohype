@@ -7,6 +7,7 @@
             $('.overlay').on('click', function(){
                 $('.widget-add').removeClass('clicked').removeClass('col-md-3').addClass('col-md-2');
                 $('.overlay').hide();
+                $('.widget.display_add').removeClass('display_add');
                 $('.content',$('.widget-add')).removeClass('height-2').addClass('height-1');
             });
         });

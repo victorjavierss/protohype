@@ -34,7 +34,9 @@ WidgetContainer.prototype.init = function(){
     var plugin = this;
 
     $('.opener', this.container).on('click', function(evt){
-        $('#'+plugin.guid+' > .container-config .properties-config, .arrow-up').toggle();
+        $('#'+plugin.guid+' > .container-config .properties-config').toggle();
+
+        console.log('#'+plugin.guid+' > .container-config .properties-config');
     });
 
     WidgetContainer.prototype.attribs['background'] = new BackgroundSelector( this, '#'+this.guid );;
@@ -54,11 +56,15 @@ WidgetContainer.prototype.init = function(){
         });
     });
 
-    new WidgetAddWidget( this, {Web:{widgets:['WidgetHTML','WidgetMenu','WidgetSlider','WidgetMedia','WidgetSocialNetworks'], open:true},
+    var widgetAdd = new WidgetAddWidget( this, {Web:{widgets:['WidgetHTML','WidgetMenu','WidgetSlider','WidgetMedia','WidgetSocialNetworks'], open:true},
                                 Video:{widgets:['WidgetVideo','WidgetVideoFeed','WidgetVideoEmbed','WidgetVideoUpload']},
                                 Monetization:{widgets:['WidgetMonetizationVideoAds','WidgetMonetizationBanners','WidgetMonetizationPromotions']},
                                 Forms:{widgets:['WidgetFormContact','WidgetFormSearch','WidgetFormNewsletter']}
                         });
+
+    $( '.addWidget', this.container ).on('click', function(){
+        $('.add-widget',widgetAdd.container).trigger('click');
+    });
 };
 
 WidgetContainer.prototype.add = function( widget ){

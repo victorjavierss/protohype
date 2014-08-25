@@ -80,6 +80,9 @@ WidgetVideo.prototype.addVideosToList = function( data ){
 
         $(videoDiv).on('click', function(){
             plugin.generatePlayer( video.embed_code );
+            $('.opener',widgetAdd.container).trigger('click');
+            $('.i.fa.fa-cog',widgetAdd.container).trigger('click');
+            
         });
 
        $(".properties-config.bubble", plugin.container).append(videoDiv);

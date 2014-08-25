@@ -29,9 +29,15 @@ WidgetAddWidget.prototype.init = function(){
 
     $('.add-widget', this.container).on('click', function(evt){
        $('.overlay').css('display','block');
-       $(this.parentNode.parentNode).addClass('clicked');
-       $(this.parentNode.parentNode).removeClass('col-md-2').addClass('col-md-3');
-       $('.content',this.parentNode.parentNode).removeClass('height-1').addClass('height-2');
+
+        var nodeParent = this.parentNode.parentNode;
+
+       $(nodeParent).addClass('clicked');
+       $(nodeParent).removeClass('col-md-2').addClass('col-md-3');
+
+        $(nodeParent.parentNode.parentNode).addClass('display_add');
+
+       $('.content',nodeParent).removeClass('height-1').addClass('height-2');
     });
 
     var plugin = this;
